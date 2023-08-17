@@ -27,30 +27,34 @@ const Home = () => {
 
             <div className='hero_btn d_flex'>
               <div className='col_1'>
-                <h4>FIND WITH ME</h4>
+                <h4>FIND ME IN</h4>
                 <div className='button'>
                   <button className='btn_shadow'>
-                    <i className='fab fa-facebook-f'></i>
+                    <i className='fab fa-github'></i>
                   </button>
                   <button className='btn_shadow'>
-                    <i className='fab fa-instagram'></i>
+                  <i className='fab fa-linkedin-in'></i>
                   </button>
                   <button className='btn_shadow'>
-                    <i className='fab fa-linkedin-in'></i>
+                    <i className="fa-brands fa-x-twitter"></i>
                   </button>
                 </div>
               </div>
               <div className='col_1'>
-                <h4>BEST SKILL ON</h4>
+                <h4>BEST SKILLS ON</h4>
                 <button className='btn_shadow'>
-                  <img src="" alt='' />
+                <i className="fa-brands fa-square-js"></i>
                 </button>
                 <button className='btn_shadow'>
-                  <img src="" alt='' />
+                <i className="fa-brands fa-react"></i>
                 </button>
                 <button className='btn_shadow'>
-                  <img src="" alt='' />
+                <i className="fa-brands fa-python"></i>
                 </button>
+                <button className='btn_shadow'>
+                <i className="fa-brands fa-git-alt"></i>
+                </button>
+
               </div>
             </div>
           </div>
