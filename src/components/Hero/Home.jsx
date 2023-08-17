@@ -14,12 +14,12 @@ const Home = () => {
           <div className='left top'>
             {/* <h3>WELCOME TO MY WORLD</h3> */}
             <h1>
-              Hi, I’m <span>Francisco</span>
+              Hi, I’m <span>Francisco</span>,
             </h1>
             <h2>
-              a
+              I'm a
               <span>
-                <Typewriter words={[" Marketing Specialist.", " Developer.", " Geek.", " Passionate about coding."]} loop cursor cursorStyle='|' typeSpeed={70} deleteSpeed={50} delaySpeed={1000} />
+                <Typewriter words={[" Marketing Specialist.", " Developer.", " Geek.", " Coding passionate."]} loop cursor cursorStyle='|' typeSpeed={70} deleteSpeed={50} delaySpeed={1000} />
               </span>
             </h2>
 
@@ -29,29 +29,29 @@ const Home = () => {
               <div className='col_1'>
                 <h4>FIND ME IN</h4>
                 <div className='button'>
-                  <button className='btn_shadow'>
+                  <button className='btn_brands'>
                     <i className='fab fa-github'></i>
                   </button>
-                  <button className='btn_shadow'>
+                  <button className='btn_brands'>
                   <i className='fab fa-linkedin-in'></i>
                   </button>
-                  <button className='btn_shadow'>
+                  <button className='btn_brands'>
                     <i className="fa-brands fa-x-twitter"></i>
                   </button>
                 </div>
               </div>
               <div className='col_1'>
                 <h4>BEST SKILLS ON</h4>
-                <button className='btn_shadow'>
+                <button className='btn_brands'>
                 <i className="fa-brands fa-square-js"></i>
                 </button>
-                <button className='btn_shadow'>
+                <button className='btn_brands'>
                 <i className="fa-brands fa-react"></i>
                 </button>
-                <button className='btn_shadow'>
+                <button className='btn_brands'>
                 <i className="fa-brands fa-python"></i>
                 </button>
-                <button className='btn_shadow'>
+                <button className='btn_brands'>
                 <i className="fa-brands fa-git-alt"></i>
                 </button>
 
