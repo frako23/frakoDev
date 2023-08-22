@@ -166,8 +166,8 @@
         @media (min-width: 1500px) {
         .hero .right_img img {
           position: absolute;
-          top: 8%;
-          right: 47%;
+          top: 4%;
+          right: 33%;
           width: 29rem;
       }
     }
