@@ -29,15 +29,21 @@ const Home = () => {
               <div className='col_1'>
                 <h4>FIND ME IN</h4>
                 <div className='button'>
+                  <a href="https://github.com/frako23">
                   <button className='btn_brands'>
                     <i className='fab fa-github'></i>
                   </button>
+                  </a>
+                  <a href="https://www.linkedin.com/in/franciscorozco/?locale=en_US">
                   <button className='btn_brands'>
                   <i className='fab fa-linkedin-in'></i>
                   </button>
+                  </a>
+                  <a href="https://twitter.com/frako23">
                   <button className='btn_brands'>
                     <i className="fa-brands fa-x-twitter"></i>
                   </button>
+                  </a>
                 </div>
               </div>
               <div className='col_1'>

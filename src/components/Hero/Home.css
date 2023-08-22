@@ -145,7 +145,7 @@
   }
     }
 
-    @media (max-width: 425px) {
+    @media (max-width: 500px) {
       .hero .right_img img {
         position: absolute;
         top:-8%;
@@ -153,3 +153,21 @@
         width: 16rem;
     }
       }
+
+      @media (max-width: 2560px) {
+        .hero .right_img img {
+          position: absolute;
+          top: 7.5%;
+          right: 32%;
+          width: 28rem;
+      }
+        }
+
+        @media (max-width: 1440px) {
+        .hero .right_img img {
+          position: absolute;
+          top: -1%;
+          right: 1%;
+          width: 29rem;
+      }
+    }
