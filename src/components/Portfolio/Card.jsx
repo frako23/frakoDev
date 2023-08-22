@@ -20,9 +20,9 @@ const Card = (props) => {
         </div>
         <div className='category d_flex'>
           <span onClick={toggleModal}>{props.category}</span>
-          <label>
+          {/* <label>
             <i className='far fa-heart'></i> {props.totalLike}
-          </label>
+          </label> */}
         </div>
         <div className='title'>
           <h2 onClick={toggleModal}>{props.title}</h2>

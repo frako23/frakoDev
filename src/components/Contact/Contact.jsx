@@ -48,22 +48,28 @@ const Contact = () => {
                   <img src="" alt='' />
                 </div>
                 <div className='details'>
-                  <h1>Nevine Acotanza</h1>
-                  <p>Chief Operating Officer</p>
-                  <p>I am available for freelance work. Connect with me via and call in to my account.</p> <br />
-                  <p>Phone: +01234567890</p>
-                  <p>Email: admin@example.com</p> <br />
+                  <h1>Francisco Orozco</h1>
+                  <p>Software Developer</p>
+                  <p>I am available for freelance work. Connect with me via email or thru call.</p> <br />
+                  <p>Phone: +58 04242526757</p>
+                  <p>Email: frako23@gmail.com</p> <br />
                   <span>FIND WITH ME</span>
                   <div className='button f_flex'>
+                    <a href="mailto:frako23@gmail.com">
                     <button className='btn_shadow'>
-                      <i className='fab fa-facebook-f'></i>
+                      <i className='fa-solid fa-envelope'></i>
                     </button>
+                    </a>
+                    <a href="https://wa.me/584242526757">
                     <button className='btn_shadow'>
-                      <i className='fab fa-instagram'></i>
+                      <i className='fa-brands fa-whatsapp'></i>
                     </button>
+                    </a>
+                    <a href="tg://resolve?domain=Frako23">
                     <button className='btn_shadow'>
-                      <i className='fab fa-twitter'></i>
+                      <i className='fa-solid fa-paper-plane'></i>
                     </button>
+                    </a>
                   </div>
                 </div>
               </div>
