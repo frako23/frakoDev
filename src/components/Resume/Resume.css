@@ -10,9 +10,15 @@
   }
   .Resume hr {
     margin: 30px 0 30px 0;
-    border: 1px solid #e3e9ed;
-    background-color: #e3e9ed;
+    border: 1px solid black;
+    background-color: black;
+    transition: 0.5s;
   }
+  /* .Resume hr:hover {
+    margin: 30px 0 30px 0;
+    border: 1px solid white;
+    background-color: white;
+  } */
   .Resume .rate .btn_shadow {
     color: #35AD94;
     padding: 15px 30px;
@@ -37,6 +43,11 @@
   }
   .Resume .box:hover p {
     color: white;
+  }
+  .Resume .box:hover hr {
+    border: 1px solid white;
+    background-color: white;
+
   }
   .Resume .content-section {
     position: relative;

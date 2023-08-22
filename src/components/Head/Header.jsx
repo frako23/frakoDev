@@ -33,18 +33,18 @@ const Header = () => {
               <li>
                 <a href='#resume'>resume</a>
               </li>
-              <li>
+              {/* <li>
                 <a href='#clients'>clients</a>
               </li>
               <li>
                 <a href='#blog'>blog</a>
-              </li>
+              </li> */}
               <li>
                 <a href='#contact'>contact</a>
               </li>
-              <li>
+              {/* <li>
                 <button className='home-btn'>BUY NOW</button>
-              </li>
+              </li> */}
             </ul>
 
             <button className='toggle' onClick={() => setMobile(!Mobile)}>

@@ -13,7 +13,7 @@ const Home = () => {
         <div className='container f_flex top'>
           <div className='left top'>
             {/* <h3>WELCOME TO MY WORLD</h3> */}
-            <h1>
+            <h1 style={{color:"white"}}>
               Hi, I’m <span>Francisco</span>,
             </h1>
             <h2>
@@ -23,7 +23,9 @@ const Home = () => {
               </span>
             </h2>
 
-            <p>I use animation as a third dimension by which to simplify experiences and kuiding thro each and every interaction. I’m not adding motion just to spruce things up, but doing it in ways that.</p>
+            <p>I am a full stack developer with more than 13 years of experience in marketing and sales who decided to make a 180 degree change in his professional life to pursue his passion for working in technology. <br/>
+
+I feel comfortable working with different teams, I like to provide solutions, I am empathetic, always focused on solving problems in pressure environments,ethic. I'm experienced in JavaScript, ReactJS, Bootstrap, NodeJS, SQL, Python, FlaskSQL, REST APIs, and Git.</p>
 
             <div className='hero_btn d_flex'>
               <div className='col_1'>

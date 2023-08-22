@@ -32,8 +32,8 @@ const data = [
     {
       id: 6,
       image: "https://img.icons8.com/glyph-neue/50/000000/polyline.png ",
-      title: "Personal Portfolio April",
-      desc: " It uses a dictionary of over 200 Latin words, combined with a handful of model sentence.",
+      title: "API intregation services",
+      desc: "Integrate your web application with data of any provider or client thru APIs",
     },
   ]
   export default data
