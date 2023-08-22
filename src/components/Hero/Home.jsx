@@ -23,9 +23,7 @@ const Home = () => {
               </span>
             </h2>
 
-            <p>I am a full stack developer with more than 13 years of experience in marketing and sales who decided to make a 180 degree change in his professional life to pursue his passion for working in technology. <br/>
-
-I feel comfortable working with different teams, I like to provide solutions, I am empathetic, always focused on solving problems in pressure environments,ethic. I'm experienced in JavaScript, ReactJS, Bootstrap, NodeJS, SQL, Python, FlaskSQL, REST APIs, and Git.</p>
+            <p>I am a full stack developer with more than 13 years of experience in marketing and sales who decided to make a 180 degree change in his professional life to pursue his passion for working in technology.</p>
 
             <div className='hero_btn d_flex'>
               <div className='col_1'>
