@@ -101,6 +101,9 @@ p {
 .text-center {
   text-align: center;
 }
+.text-end {
+  text-align: end;
+}
 .primary_color {
   color: #35AD94;
 }
