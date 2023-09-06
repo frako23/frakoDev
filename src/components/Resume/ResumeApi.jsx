@@ -12,7 +12,7 @@ const ResumeApi = [
       category: "education",
       year: "Universidad Central de Venezuela (2012 - 2016) ",
       title: "Bussiness Marketing Specialist",
-      desc: "Maecenas finibus nec sem ut imperdiet. Ut tincidunt est ac dolor aliquam sodales. Phasellus sed mauris hendrerit, laoreet sem in, lobortis mauris hendrerit ante.",
+      desc: "Business Marketing Specialization Degree",
       rate: "4.50/5",
     },
     {
@@ -20,7 +20,7 @@ const ResumeApi = [
       category: "education",
       year: "Universidad Simón Bolivar (2003 - 2009) ",
       title: "Production Engeneer",
-      desc: "If you are going to use a passage. Ut tincidunt est ac dolor aliquam sodales. Phasellus sed mauris hendrerit, laoreet sem in, lobortis mauris hendrerit ante.",
+      desc: "university degree in production engineering",
       rate: "4.80/5 ",
     },
     {
@@ -28,25 +28,25 @@ const ResumeApi = [
       category: "experience",
       year: "Kentron Sistemas de Información  (Sep 2023 - Act) ",
       title: "Web Developer",
-      desc: "Contrary to popular belief. Ut tincidunt est ac dolor aliquam sodales. Phasellus sed mauris hendrerit, laoreet sem in, lobortis mauris hendrerit ante.",
+      desc: "Development of Frontend (TypeScript, React) and Backend (Ruby, Oracle) components",
       rate: "4.70/5 ",
     },
     {
       id: 5,
       category: "experience",
-      year: "Movistar (2013 - 2016) ",
-      title: "The Personal Portfolio Mystery",
-      desc: "Generate Lorem Ipsum which looks. Ut tincidunt est ac dolor aliquam sodales. Phasellus sed mauris hendrerit, laoreet sem in, lobortis mauris hendrerit ante.",
-      rate: "4.95/5 ",
+      year: "Samsung ELectronics (2016 - 2017) ",
+      title: "Key Account Assitant Manager",
+      desc: "Develop the commercial relationship of B2B clients (distributors and retailers) through the constant accompaniment of each client during the negotiation processes.",
+      rate: "5.00/5 ",
     },
     {
       id: 6,
       category: "experience",
-      year: "Works at Plugin Development (2016 - 2020) ",
-      title: "Diploma in Computer Science",
-      desc: "Maecenas finibus nec sem ut imperdiet. Ut tincidunt est ac dolor aliquam sodales. Phasellus sed mauris hendrerit, laoreet sem in, lobortis mauris hendrerit ante.",
-      rate: "5.00/5 ",
-    },
+      year: "Movistar (2013 - 2016) ",
+      title: "Marketing specialist",
+      desc: "Develope marketing strategies to uptake clients of mobile internet service, creating pricing and communicational strategies.",
+      rate: "4.95/5 ",
+    }, 
   ]
   
   export default ResumeApi
