@@ -27,7 +27,7 @@ const data = [
       id: 5,
       image: "https://img.icons8.com/?size=512&id=aQlRLcL6h4Ro&format=png ",
       title: "Admin web panels",
-      desc: "administrative panels for any kind of bussiness, to control sales, inventory, purchases, taxes etc.",
+      desc: "Administrative panels for any kind of bussiness, to control sales, inventory, purchases, taxes etc.",
     },
     {
       id: 6,

@@ -39,7 +39,7 @@ const Home = () => {
                   <i className='fab fa-linkedin-in'></i>
                   </button>
                   </a>
-                  <a href="https://twitter.com/frako23">
+                  <a href="https://twitter.com/frakoDev">
                   <button className='btn_brands'>
                     <i className="fa-brands fa-x-twitter"></i>
                   </button>

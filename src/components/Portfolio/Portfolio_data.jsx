@@ -5,6 +5,13 @@ const Portfolio_data = [
       totalLike: "600",
       title: "LinkedTeam",
       image: "https://raw.githubusercontent.com/frako23/frakoDev/main/src/components/Portfolio/img/Linkedteam-1.png",
+      description:["- App oriented to enhance the performance of the sales force",
+        "- Contains a training section with videos and a comments and answers section",
+        "- CRM platform with sales funnel (Prospects / Contacted / First Appointment / Negotiation / Closing)",
+        "- Section to register activities with clients (Calls, Sending text messages / Emails, Meetings)",
+        "- Section to register pending tasks with the Kanban methodology (To Do / In process / Done)",
+        "- Manager view to access the CRM and activities with clients of each of the members of your team"],
+        icons:""
     },
     {
       id: 2,
