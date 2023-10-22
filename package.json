@@ -11,9 +11,11 @@
     "host": "vite --host"
   },
   "dependencies": {
+    "@formspree/react": "^2.5.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-simple-typewriter": "^5.0.1"
+    "react-simple-typewriter": "^5.0.1",
+    "sweetalert2": "^11.7.32"
   },
   "devDependencies": {
     "@types/react": "^18.2.15",
