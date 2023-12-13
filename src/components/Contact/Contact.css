@@ -20,6 +20,15 @@
   font-size: 17px;
   color: black;
 }
+.Contact .details p a{
+  font-size: 17px;
+  color: black;
+}
+.Contact .details p a:hover{
+  font-size: 17px;
+  color: #35ad94;
+}
+
 .Contact .button {
   margin-top: 20px;
 }

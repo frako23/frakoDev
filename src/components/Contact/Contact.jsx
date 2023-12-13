@@ -40,8 +40,8 @@ const Contact = () => {
                     or thru call.
                   </p>{" "}
                   <br />
-                  <p>Phone: +58 04242526757</p>
-                  <p>Email: frako23@gmail.com</p> <br />
+                  <p>Phone:<a href="https://wa.me/584242526757">+58 04242566414</a> </p>
+                  <p>Email:<a href="mailto:frako23@gmail.com">frakodev.code@gmail.com</a> </p> <br />
                   <span>FIND WITH ME</span>
                   <div className="button f_flex">
                     <a href="mailto:frako23@gmail.com">
