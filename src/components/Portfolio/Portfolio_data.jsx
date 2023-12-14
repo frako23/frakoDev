@@ -21,7 +21,7 @@ const Portfolio_data = [
     category: "WEB PAGE",
     technologies: ["JavaScript", "React", "CSS"],
     title: "TuPlanificadoraFinanciera",
-    image: "./image/portfolio-04.jpg",
+    image: "https://raw.githubusercontent.com/frako23/frakoDev/main/src/components/Portfolio/img/planFin.png",
     description: [
       "- Corporate landing page about financial advisor service",
       "- Completly reponsive",
