@@ -1,7 +1,21 @@
 /* eslint-disable react/prop-types */
 import React, { useState } from "react";
+import { FlaskIcon } from "../../assets/icons/flask";
+import { ReactIcon } from "../../assets/icons/react";
+import { PythonIcon } from "../../assets/icons/python";
+import { JavaScriptIcon } from "../../assets/icons/javascript";
+import { PostgreSQLIcon } from "../../assets/icons/postgre";
+import { IconSwitch } from "../../logic/iconSwitch";
+import { CSSIcon } from "../../assets/icons/css";
 
-const Card = ({ title, image, description, category, technologies, proyectUrl }) => {
+const Card = ({
+  title,
+  image,
+  description,
+  category,
+  technologies,
+  proyectUrl,
+}) => {
   const [modal, setModal] = useState(false);
 
   const toggleModal = () => {
@@ -13,6 +27,7 @@ const Card = ({ title, image, description, category, technologies, proyectUrl })
   } else {
     document.body.classList.remove("active-modal");
   }
+
   return (
     <>
       <div className="box btn_shadow ">
@@ -44,7 +59,7 @@ const Card = ({ title, image, description, category, technologies, proyectUrl })
             <div className="modal-text right">
               <span>Featured - Design</span>
               <h1>{title}</h1>
-              <div style={{ maxHeight: "220px", overflowY:"scroll" }}>
+              <div style={{ maxHeight: "220px", overflowY: "scroll" }}>
                 <ul>
                   {description.map((desc, index) => {
                     return <li key={index}>{desc}</li>;
@@ -52,13 +67,29 @@ const Card = ({ title, image, description, category, technologies, proyectUrl })
                 </ul>
               </div>
 
-              <div className="button f_flex mtop">
+              <div
+                className="button f_flex mtop"
+                style={{ justifyContent: "space-between" }}
+              >
                 {/* <button className="btn_shadow">
                   LIKE THIS <i className="far fa-thumbs-up"></i>
                 </button> */}
-                <a className="btn_shadow" target="_blank" href={proyectUrl} rel="noreferrer">
+                <a
+                  className="btn_shadow"
+                  target="_blank"
+                  href={proyectUrl}
+                  rel="noreferrer"
+                >
                   VIEW PROJECT<i className="fas fa-chevron-right"></i>
-                </a>
+                </a>{" "}
+                <div style={{ width: "16rem" }}>
+                  {/* <JavaScriptIcon />
+                  <ReactIcon />
+                  <FlaskIcon />
+                  <PythonIcon />
+                  <PostgreSQLIcon /> */}
+                  {technologies.map((tech) => IconSwitch(tech))}
+                </div>
               </div>
               <button className="close-modal btn_shadow" onClick={toggleModal}>
                 <i className="fas fa-times"></i>

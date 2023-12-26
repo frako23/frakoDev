@@ -1,21 +1,31 @@
-import React from "react"
-import "./Portfolio.css"
-import Card from "./Card"
-import Portfolio_data from "./Portfolio_data"
+import React from "react";
+import "./Portfolio.css";
+import Card from "./Card";
+import Portfolio_data from "./Portfolio_data";
 
 const Portfolio = () => {
   return (
     <>
-      <section className='Portfolio top' id='portfolio'>
-        <div className='container'>
-          <div className='heading text-center '>
+      <section className="Portfolio top" id="portfolio">
+        <div className="container">
+          <div className="heading text-center ">
             <h4>VISIT MY PORTFOLIO AND KEEP YOUR FEEDBACK</h4>
             <h1>My Portfolio</h1>
           </div>
 
-          <div className='content grid'>
+          <div className="content grid">
             {Portfolio_data.map((value, index) => {
-              return <Card key={index} image={value.image} category={value.category} description={value.description} title={value.title} proyectUrl={value.proyectUrl} />
+              return (
+                <Card
+                  key={index}
+                  image={value.image}
+                  category={value.category}
+                  description={value.description}
+                  title={value.title}
+                  proyectUrl={value.proyectUrl}
+                  technologies={value.technologies}
+                />
+              );
             })}
 
             {/*<div className='box btn_shadow '>
@@ -39,7 +49,7 @@ const Portfolio = () => {
         </div>
       </section>
     </>
-  )
-}
+  );
+};
 
-export default Portfolio
+export default Portfolio;
