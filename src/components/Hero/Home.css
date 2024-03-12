@@ -139,9 +139,9 @@
 @media (max-width: 790px) {
   .hero .right_img img {
     position: absolute;
-    top: 24%;
+    top: 16%;
     right: 28%;
-    width: 22rem;
+    width: 15rem;
   }
 }
 
@@ -149,26 +149,26 @@
   .hero .right_img img {
     position: absolute;
     top: 2%;
-    right: 5%;
-    width: 20rem;
+    right: 16%;
+    width: 15rem;
   }
 }
 
 @media (max-width: 400px) {
   .hero .right_img img {
     position: absolute;
-    top: 10%;
-    right: 5%;
-    width: 20rem;
+    top: 12%;
+    right: 15%;
+    width: 13rem;
   }
 }
 
 @media (max-width: 360px) {
   .hero .right_img img {
     position: absolute;
-    top: 4%;
-    right: 5%;
-    width: 20rem;
+    top: 10%;
+    right: 12%;
+    width: 13rem;
   }
 }
 
@@ -178,5 +178,14 @@
     top: 4%;
     right: 33%;
     width: 29rem;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .hero .right_img img {
+    position: absolute;
+    top: 8%;
+    right: -23%;
+    width: 25rem;
   }
 }

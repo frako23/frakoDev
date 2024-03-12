@@ -155,3 +155,23 @@ body.active-modal {
 .Portfolio .content {
   padding-inline: 20rem;
 }
+
+@media screen and (max-width: 1280px) {
+  .Portfolio .content {
+    padding-inline: 5rem;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .Portfolio .content {
+    padding-inline: 5rem;
+    margin-left: 5rem;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .Portfolio .content {
+    padding-inline: 0rem;
+    margin-left: 0rem;
+  }
+}
