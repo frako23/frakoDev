@@ -13,7 +13,7 @@ const Portfolio = () => {
             <h1>My Portfolio</h1>
           </div>
 
-          <div className="content grid">
+          <div className="content">
             {Portfolio_data.map((value, index) => {
               return (
                 <Card

@@ -4,6 +4,7 @@
 .Portfolio .box {
   border-radius: 10px;
   position: relative;
+  margin-bottom: 5rem;
 }
 .Portfolio .box:hover {
   background: none;
@@ -149,4 +150,8 @@ body.active-modal {
   .modal .left {
     padding: 0;
   }
+}
+
+.Portfolio .content {
+  padding-inline: 20rem;
 }
