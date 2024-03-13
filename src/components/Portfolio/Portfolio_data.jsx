@@ -36,7 +36,7 @@ const Portfolio_data = [
     technologies: ["React", "Context API", "Bootstrap"],
     title: "Brakes Store Web App",
     image:
-      "https://raw.githubusercontent.com/frako23/frakoDev/main/src/components/Portfolio/img/uniforms.avif",
+      "https://raw.githubusercontent.com/frako23/frakoDev/main/src/components/Portfolio/img/brakes.avif",
     description: [
       "- E-commerce for buying car brakes",
       "- Design for mobile phones",
