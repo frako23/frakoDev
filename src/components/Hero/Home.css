@@ -77,7 +77,7 @@
   position: relative;
 }
 .hero .right_img {
-  background: linear-gradient(145deg, #e2e8ec, #ffffff);
+  background: transparent;
   /* box-shadow: 4px 4px 8px #cbcbcb, -4px -4px 8px #ffffff; */
   border-radius: 10px;
   height: 580px;
