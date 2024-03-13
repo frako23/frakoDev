@@ -1,11 +1,11 @@
 const Portfolio_data = [
   {
     id: 1,
-    category: "CRM APPLICATION",
+    category: "WEB APPLICATION",
     title: "LinkedTeam",
     technologies: ["JavaScript", "Python", "React", "Flask", "PostgreSQL"],
     image:
-      "https://raw.githubusercontent.com/frako23/frakoDev/main/src/components/Portfolio/img/Linkedteam-1.png",
+      "https://raw.githubusercontent.com/frako23/frakoDev/main/src/components/Portfolio/img/Linkedteam-1.avif",
     description: [
       "- App oriented to enhance the performance of the sales force",
       "- Contains a training section with videos and a comments and answers section",
@@ -22,7 +22,7 @@ const Portfolio_data = [
     technologies: ["JavaScript", "React", "CSS"],
     title: "TuPlanificadoraFinanciera",
     image:
-      "https://raw.githubusercontent.com/frako23/frakoDev/main/src/components/Portfolio/img/planFin.png",
+      "https://raw.githubusercontent.com/frako23/frakoDev/main/src/components/Portfolio/img/planFin.avif",
     description: [
       "- Corporate landing page about financial advisor service",
       "- Completly reponsive",
@@ -32,11 +32,11 @@ const Portfolio_data = [
   },
   {
     id: 3,
-    category: "medical uniform store web catalog",
-    technologies: ["Astro", "Tailwind", "React"],
-    title: "Brakes selling app",
+    category: "Mobile Web Application",
+    technologies: ["React", "Context API", "Bootstrap"],
+    title: "Brakes Store Web App",
     image:
-      "https://raw.githubusercontent.com/frako23/frakoDev/main/src/components/Portfolio/img/brakes.png",
+      "https://raw.githubusercontent.com/frako23/frakoDev/main/src/components/Portfolio/img/uniforms.avif",
     description: [
       "- E-commerce for buying car brakes",
       "- Design for mobile phones",
@@ -45,6 +45,21 @@ const Portfolio_data = [
       "- The sales process finishes by contacting the seller thru Whatsapp with a pre design message with the items selected in the shopping car",
     ],
     proyectUrl: "https://test-catalog-eight.vercel.app/",
+  },
+  {
+    id: 4,
+    category: "Web Application",
+    technologies: ["Astro", "Tailwind", "React"],
+    title: "Medical Uniforms store web catalog",
+    image:
+      "https://raw.githubusercontent.com/frako23/frakoDev/main/src/components/Portfolio/img/uniforms.avif",
+    description: [
+      "- E-commerce for medical scrubs store",
+      "- Fully responsive design",
+      "- Interactive image views",
+      "- Optimized performance",
+    ],
+    proyectUrl: "https://uniformes-medicos.vercel.app/",
   },
   // {
   //   id: 4,
