@@ -6,6 +6,6 @@ Driven by curiosity and a desire for growth, Francisco dove headfirst into the r
 
 # Optimizaciones pendientes:
 
-1. []migrar iconos de fontawesome a SVG
-2. []migrar de fuente importada a fuente instalada en el sistema
-3. []agregar pastillas de tecnologías a los proyectos
+1. [ ]migrar iconos de fontawesome a SVG
+2. [ ]migrar de fuente importada a fuente instalada en el sistema
+3. [ ]agregar pastillas de tecnologías a los proyectos
