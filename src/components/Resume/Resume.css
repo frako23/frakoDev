@@ -1,6 +1,11 @@
 .Resume .heading h1 {
   font-size: 40px;
 }
+
+.Resume {
+  margin-bottom: 10rem;
+}
+
 .Resume .content {
   max-width: 85%;
   margin: auto;
@@ -59,7 +64,7 @@
   position: absolute;
   top: 16%;
   left: 0;
-  height: 118vh;
+  height: 100vh;
   width: 5px;
   background: #d9dee2;
   z-index: -2;
@@ -95,10 +100,16 @@
   }
   .Resume .left::after {
     top: 14%;
-    height: 105vh;
+    height: 80vh;
   }
 }
 
-.Resume {
-  margin-bottom: 10rem;
+@media (max-width: 450px) {
+  /* .Resume .d_flex {
+    flex-direction: column;
+  } */
+  .Resume .left::after {
+    /* top: 14%; */
+    height: 105vh;
+  }
 }
