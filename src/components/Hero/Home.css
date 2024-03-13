@@ -95,14 +95,14 @@
   .hero .left {
     width: 100%;
     margin-left: 20px;
-    margin-top: 3rem;
+    margin-bottom: 8rem;
   }
 
   .hero .right_img img {
-    position: absolute;
-    top: 17%;
-    right: 5%;
+    position: relative;
+    top: 0%;
     width: 20rem;
+    align-self: center;
   }
 
   .hero .f_flex {
@@ -112,6 +112,7 @@
   .hero .right_img {
     width: 100%;
     height: 54vh;
+    display: flex;
   }
 
   .hero .right,
@@ -119,6 +120,11 @@
     width: 50%;
     align-self: center;
   }
+
+  .hero .right_img {
+    background: transparent;
+  }
+
   header ul li a {
     color: black;
   }
@@ -136,8 +142,8 @@
 
 @media only screen and (max-width: 430px) {
   .hero .right_img img {
-    top: 13%;
-    right: -6%;
+    /* top: 13%;
+    right: -6%; */
     width: 18rem;
   }
   .hero .right,
@@ -147,10 +153,10 @@
 }
 
 @media only screen and (max-width: 375px) {
-  .hero .right_img img {
+  /* .hero .right_img img {
     top: 16%;
     right: 16%;
-  }
+  } */
   .hero .right,
   .hero .left {
     width: 80%;
