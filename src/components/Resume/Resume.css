@@ -2,6 +2,10 @@
   font-size: 40px;
 }
 
+.Resume .heading {
+  margin: 50px;
+}
+
 .Resume {
   margin-bottom: 10rem;
 }
@@ -56,18 +60,20 @@
 .Resume .content-section {
   position: relative;
 }
+
 .Resume .left {
   position: relative;
 }
+
 .Resume .left::after {
   content: "";
   position: absolute;
-  top: 16%;
+  top: 0;
   left: 0;
-  height: 100vh;
+  height: 100%;
   width: 5px;
   background: #d9dee2;
-  z-index: -2;
+  z-index: -1;
 }
 .Resume .box::after {
   content: "";
@@ -91,9 +97,10 @@
   z-index: 5;
   transition: 0.5s;
 }
-.Resume .box:hover.box:before {
+.Resume .box:hover::before {
   background: #35ad94;
 }
+
 @media (max-width: 768px) {
   .Resume .d_flex {
     flex-direction: column;

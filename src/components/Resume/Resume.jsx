@@ -1,4 +1,3 @@
-import React from "react";
 import "./Resume.css";
 import ResumeApi from "./ResumeApi";
 import Card from "./Card";
@@ -9,14 +8,14 @@ const Resume = () => {
       <section className="Resume" id="resume">
         <div className="container top">
           <div className="heading text-center">
-            <h4>1+ YEAR OF EXPERIENCE IN CODING</h4>
+            <h4>3+ YEAR OF EXPERIENCE IN CODING</h4>
             <h1>My Resume</h1>
           </div>
 
           <div className="content-section mtop d_flex">
             <div className="left">
               <div className="heading">
-                <h4>2003-2022</h4>
+                <h4>2003-present</h4>
                 <h1>Education</h1>
               </div>
 
@@ -52,7 +51,7 @@ const Resume = () => {
             </div>
             <div className="left">
               <div className="heading">
-                <h4>2009-2023</h4>
+                <h4>2009-present</h4>
                 <h1>Job Experience</h1>
               </div>
 
