@@ -1,6 +1,6 @@
 import { useForm, ValidationError } from "@formspree/react";
 import "./Contact.css";
-import Swal from 'sweetalert2'
+import Swal from "sweetalert2";
 
 const Contact = () => {
   const [state, handleSubmit] = useForm("myyqokwq");
@@ -15,7 +15,6 @@ const Contact = () => {
     });
     document.getElementById("contact-form").reset();
   }
-
 
   return (
     <>
@@ -40,8 +39,17 @@ const Contact = () => {
                     or thru call.
                   </p>{" "}
                   <br />
-                  <p>Phone:<a href="https://wa.me/584242526757">+58 04242566414</a> </p>
-                  <p>Email:<a href="mailto:frako23@gmail.com">frakodev.code@gmail.com</a> </p> <br />
+                  <p>
+                    Phone:
+                    <a href="https://wa.me/584242526757">+58 04242526757</a>{" "}
+                  </p>
+                  <p>
+                    Email:
+                    <a href="mailto:frako23@gmail.com">
+                      frakodev.code@gmail.com
+                    </a>{" "}
+                  </p>{" "}
+                  <br />
                   <span>FIND WITH ME</span>
                   <div className="button f_flex">
                     <a href="mailto:frako23@gmail.com">
@@ -67,7 +75,7 @@ const Contact = () => {
             <div className="right box_shodow">
               <form onSubmit={handleSubmit} id="contact-form">
                 <div className="input">
-                  <span style={{fontWeight: 'bold'}}>YOUR NAME</span>
+                  <span style={{ fontWeight: "bold" }}>YOUR NAME</span>
                   <input name="name" id="name" type="text" className="input" />
                   <ValidationError
                     prefix="Name"
@@ -76,8 +84,13 @@ const Contact = () => {
                   />
                 </div>
                 <div className="input">
-                  <span style={{fontWeight: 'bold'}}>EMAIL </span>
-                  <input type="email" name="email" id="email" className="input" />
+                  <span style={{ fontWeight: "bold" }}>EMAIL </span>
+                  <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    className="input"
+                  />
                   <ValidationError
                     prefix="Email"
                     field="email"
@@ -85,7 +98,7 @@ const Contact = () => {
                   />
                 </div>
                 <div className="input">
-                  <span style={{fontWeight: 'bold'}}>YOUR MESSAGE </span>
+                  <span style={{ fontWeight: "bold" }}>YOUR MESSAGE </span>
                   <textarea
                     cols="30"
                     rows="10"
