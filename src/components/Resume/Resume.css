@@ -101,6 +101,21 @@
   background: #35ad94;
 }
 
+.btn_download {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #007bff;
+  color: white;
+  font-weight: bold;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.btn_download:hover {
+  background-color: #0056b3;
+}
+
 @media (max-width: 768px) {
   .Resume .d_flex {
     flex-direction: column;

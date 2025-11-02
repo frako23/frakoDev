@@ -10,6 +10,9 @@ const Resume = () => {
           <div className="heading text-center">
             <h4>3+ YEAR OF EXPERIENCE IN CODING</h4>
             <h1>My Resume</h1>
+            <a href="/CV-Francisco.pdf" download className="btn_download">
+              Descargar CV
+            </a>
           </div>
 
           <div className="content-section mtop d_flex">
