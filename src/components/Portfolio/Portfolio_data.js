@@ -3,7 +3,8 @@ const Portfolio_data = [
     category: "WEB PAGE",
     technologies: ["JavaScript", "HTML", "CSS"],
     title: "Brenda Fitness",
-    image: "/public/806shots_so.webp",
+    image:
+      "https://raw.githubusercontent.com/frako23/frakoDev/refs/heads/main/public/806shots_so.webp",
     description: [
       "- Personal trainer website",
       "- Completly reponsive",
