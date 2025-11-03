@@ -57,6 +57,91 @@
 .Portfolio .box:hover {
   color: black;
 }
+
+.Portfolio .box {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 4rem;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.Portfolio .box:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
+}
+
+.Portfolio .img {
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.5s ease;
+}
+
+.Portfolio .img img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.Portfolio .img:hover img {
+  transform: scale(1.05);
+}
+
+.Portfolio .category {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  color: #35ad94;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.Portfolio .title h2 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin: 0;
+  color: #1e1e1e;
+  transition: color 0.3s ease;
+}
+
+.Portfolio .box:hover .title h2 {
+  color: #35ad94;
+}
+
+.Portfolio .description {
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+.Portfolio .technologies {
+  font-size: 0.85rem;
+  color: #888;
+  font-style: italic;
+}
+
+.Portfolio .arrow {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  font-size: 1.2rem;
+  color: #35ad94;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.Portfolio .box:hover .arrow {
+  opacity: 1;
+}
+
 /*------------popup--------*/
 body.active-modal {
   overflow-y: hidden;
@@ -154,6 +239,20 @@ body.active-modal {
 
 .Portfolio .content {
   padding-inline: 20rem;
+}
+
+.Portfolio .content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem;
+  padding-inline: 5rem;
+}
+
+@media screen and (max-width: 1024px) {
+  .Portfolio .content {
+    grid-template-columns: 1fr;
+    padding-inline: 2rem;
+  }
 }
 
 @media screen and (max-width: 1280px) {

@@ -14,12 +14,12 @@ const Portfolio_data = [
       "- Section to register pending tasks with the Kanban methodology",
       "- Manager view to access the CRM and activities with clients of each of the members of your team",
     ],
-    proyectUrl: "https://www.linkedteam.app/",
+    proyectUrl: "https://linkedteam.frakodev.com/",
   },
   {
     id: 2,
     category: "WEB PAGE",
-    technologies: ["JavaScript", "React", "CSS"],
+    technologies: ["JavaScript", "HTML", "CSS"],
     title: "TuPlanificadoraFinanciera",
     image:
       "https://raw.githubusercontent.com/frako23/frakoDev/main/src/components/Portfolio/img/planFin.avif",
