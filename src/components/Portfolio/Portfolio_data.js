@@ -1,6 +1,17 @@
 const Portfolio_data = [
   {
-    id: 1,
+    category: "WEB PAGE",
+    technologies: ["JavaScript", "HTML", "CSS"],
+    title: "Brenda Fitness",
+    image: "/public/806shots_so.webp",
+    description: [
+      "- Personal trainer website",
+      "- Completly reponsive",
+      "- With form contact section",
+    ],
+    proyectUrl: "https://brenda.fitness/",
+  },
+  {
     category: "WEB APPLICATION",
     title: "LinkedTeam",
     technologies: ["JavaScript", "Python", "React", "Flask", "PostgreSQL"],
@@ -17,7 +28,6 @@ const Portfolio_data = [
     proyectUrl: "https://linkedteam.frakodev.com/",
   },
   {
-    id: 2,
     category: "WEB PAGE",
     technologies: ["JavaScript", "HTML", "CSS"],
     title: "TuPlanificadoraFinanciera",
@@ -28,10 +38,9 @@ const Portfolio_data = [
       "- Completly reponsive",
       "- With form contact section",
     ],
-    proyectUrl: "https://tu-plan-fpx7y3mry-frako23.vercel.app/",
+    proyectUrl: "https://tuplanificadorafinanciera.com/",
   },
   {
-    id: 3,
     category: "Mobile Web Application",
     technologies: ["React", "Context API", "Bootstrap"],
     title: "Brakes Store Web App",
@@ -47,7 +56,6 @@ const Portfolio_data = [
     proyectUrl: "https://test-catalog-eight.vercel.app/",
   },
   {
-    id: 4,
     category: "Web Application",
     technologies: ["Astro", "Tailwind", "React"],
     title: "Medical Uniforms store web catalog",

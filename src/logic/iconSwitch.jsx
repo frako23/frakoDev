@@ -1,5 +1,6 @@
 import { CSSIcon } from "../assets/icons/css";
 import { FlaskIcon } from "../assets/icons/flask";
+import HtmlIcon from "../assets/icons/html";
 import { JavaScriptIcon } from "../assets/icons/javascript";
 import { PostgreSQLIcon } from "../assets/icons/postgre";
 import { PythonIcon } from "../assets/icons/python";
@@ -19,6 +20,8 @@ export const IconSwitch = (tech) => {
       return <PostgreSQLIcon />;
     case "CSS":
       return <CSSIcon />;
+    case "HTML":
+      return <HtmlIcon />;
     default:
       return null;
   }
