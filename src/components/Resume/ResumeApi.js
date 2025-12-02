@@ -29,7 +29,7 @@ const ResumeApi = [
   {
     id: 4,
     category: "experience",
-    year: "Atenas Grupo Consultor (Jan 2025 - Present)",
+    year: "Atenas Grupo Consultor (Jan 2025 - Nov25)",
     title: "IT Development Lead",
     desc: "Lead multidisciplinary development teams, coordinate daily activities, integrate external projects, and promote emerging technologies.",
     rate: "5.00/5",
