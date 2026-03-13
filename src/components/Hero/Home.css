@@ -74,21 +74,26 @@
 }
 .hero .right {
   width: 40%;
-  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
 .hero .right_img {
+  position: relative;
+  width: 100%;
+  max-width: 450px; /* Evita que crezca demasiado */
+  aspect-ratio: 4 / 5; /* Mantiene la proporción automáticamente */
   background: transparent;
-  /* box-shadow: 4px 4px 8px #cbcbcb, -4px -4px 8px #ffffff; */
   border-radius: 10px;
-  height: 580px;
-  width: 510px;
-  margin-top: 20%;
+  overflow: hidden; /* Corta la imagen si sobresale del radio */
 }
+
 .hero .right_img img {
-  position: absolute;
-  top: 12%;
-  right: 10%;
-  width: 25rem;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ajusta la foto sin deformarla */
+  display: block;
 }
 @media screen and (max-width: 768px) {
   .hero .right,

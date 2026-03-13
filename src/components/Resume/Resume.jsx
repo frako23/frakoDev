@@ -1,6 +1,6 @@
+import Card from "./Card";
 import "./Resume.css";
 import ResumeApi from "./ResumeApi";
-import Card from "./Card";
 
 const Resume = () => {
   return (
@@ -11,7 +11,7 @@ const Resume = () => {
             <h4>3+ YEAR OF EXPERIENCE IN CODING</h4>
             <h1>My Resume</h1>
             <a href="/CV-Francisco.pdf" download className="btn_download">
-              Descargar CV
+              Download CV <i className="fa-solid fa-file-arrow-down"></i>
             </a>
           </div>
 

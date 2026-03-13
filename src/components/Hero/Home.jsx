@@ -1,6 +1,6 @@
 import "./Home.css";
 // import hero from "../../assets/images/foto.png"
-import avif from "../../assets/images/fotoAvif.avif";
+import foto from "../../assets/images/fotoNueva.png";
 // import skill1 from "../pic/skill1.png"
 // import skill2 from "../pic/skill2.png"
 // import skill3 from "../pic/skill3.png"
@@ -88,7 +88,7 @@ const Home = () => {
           </div>
           <div className="right">
             <div className="right_img">
-              <img src={avif} alt="" />
+              <img src={foto} alt="Foto de Francisco Orozco" />
             </div>
           </div>
         </div>
