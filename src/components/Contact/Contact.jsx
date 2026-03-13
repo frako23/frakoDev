@@ -1,119 +1,78 @@
-import { useForm, ValidationError } from "@formspree/react";
+// import contactImg from "../../assets/images/contact.png"; // Asegúrate de que la ruta sea correcta
 import "./Contact.css";
-import Swal from "sweetalert2";
 
 const Contact = () => {
-  const [state, handleSubmit] = useForm("myyqokwq");
-
-  if (state.succeeded) {
-    Swal.fire({
-      icon: "success",
-      title: "Thanks for getting in touch with me!! 🙌",
-      text: "I´ll answer ASAP!",
-      confirmButtonColor: "#35AD94",
-      footer: "Sincerely: frakoDev <span>&#128526</span> ",
-    });
-    document.getElementById("contact-form").reset();
-  }
-
   return (
     <>
       <section className="Contact" id="contact">
-        <div className="container top">
-          <div className="heading text-end">
+        <div className="container">
+          <div className="heading text-center">
             <h4>CONTACT</h4>
             <h1>Contact With Me</h1>
           </div>
 
           <div className="content d_flex">
+            {/* PARTE IZQUIERDA: INFO */}
             <div className="left">
-              <div className="box box_shodow">
+              <div className="box_shodow">
                 <div className="img">
-                  <img src="" alt="" />
+                  {/* <img src={contactImg} alt="Contact Me" /> */}
                 </div>
                 <div className="details">
+                  <span>IN TOUCH</span>
                   <h1>Francisco Orozco</h1>
-                  <p>Software Developer</p>
+                  <p>IT Development Lead & Full Stack Developer</p>
                   <p>
-                    I am available for freelance work. Connect with me via email
-                    or thru call.
-                  </p>{" "}
-                  <br />
-                  <p>
-                    Phone:
-                    <a href="https://wa.me/584242526757">+58 04242526757</a>{" "}
+                    I am available for freelance projects or full-time
+                    opportunities. Connect with me via and let&apos;s talk.
                   </p>
-                  <p>
-                    Email:
-                    <a href="mailto:frako23@gmail.com">
-                      frakodev.code@gmail.com
-                    </a>{" "}
-                  </p>{" "}
                   <br />
-                  <span>FIND WITH ME</span>
-                  <div className="button f_flex">
-                    <a href="mailto:frako23@gmail.com">
-                      <button className="btn_shadow">
-                        <i className="fa-solid fa-envelope"></i>
-                      </button>
+                  <p>
+                    Email:{" "}
+                    <a href="mailto:frakodev.code@gmail.com">
+                      frakodev.code@gmail.com
                     </a>
-                    <a href="https://wa.me/584242526757">
-                      <button className="btn_shadow">
-                        <i className="fa-brands fa-whatsapp"></i>
-                      </button>
-                    </a>
-                    <a href="tg://resolve?domain=Frako23">
-                      <button className="btn_shadow">
-                        <i className="fa-solid fa-paper-plane"></i>
-                      </button>
-                    </a>
-                  </div>
+                  </p>
                 </div>
               </div>
             </div>
 
+            {/* PARTE DERECHA: FORMULARIO */}
             <div className="right box_shodow">
-              <form onSubmit={handleSubmit} id="contact-form">
-                <div className="input">
-                  <span style={{ fontWeight: "bold" }}>YOUR NAME</span>
-                  <input name="name" id="name" type="text" className="input" />
-                  <ValidationError
-                    prefix="Name"
-                    field="name"
-                    errors={state.errors}
-                  />
+              <form>
+                <div className="input-group">
+                  <div className="input">
+                    <span>YOUR NAME</span>
+                    <input type="text" name="fullname" required />
+                  </div>
+                  <div className="input">
+                    <span>PHONE NUMBER</span>
+                    <input type="text" name="phone" />
+                  </div>
                 </div>
+
                 <div className="input">
-                  <span style={{ fontWeight: "bold" }}>EMAIL </span>
-                  <input
-                    type="email"
-                    name="email"
-                    id="email"
-                    className="input"
-                  />
-                  <ValidationError
-                    prefix="Email"
-                    field="email"
-                    errors={state.errors}
-                  />
+                  <span>EMAIL</span>
+                  <input type="email" name="email" required />
                 </div>
+
                 <div className="input">
-                  <span style={{ fontWeight: "bold" }}>YOUR MESSAGE </span>
+                  <span>SUBJECT</span>
+                  <input type="text" name="subject" />
+                </div>
+
+                <div className="input">
+                  <span>YOUR MESSAGE</span>
                   <textarea
                     cols="30"
                     rows="10"
                     name="message"
-                    id="message"
-                    className="input"
+                    required
                   ></textarea>
-                  <ValidationError
-                    prefix="Message"
-                    field="message"
-                    errors={state.errors}
-                  />
                 </div>
-                <button className="btn_shadow" type="submit">
-                  SEND MESSAGE <i className="fa fa-long-arrow-right"></i>
+
+                <button className="btn_shadow">
+                  SEND MESSAGE <i className="fa-solid fa-paper-plane"></i>
                 </button>
               </form>
             </div>

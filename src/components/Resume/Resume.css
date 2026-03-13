@@ -1,137 +1,220 @@
-.Resume .heading h1 {
-  font-size: 40px;
-}
-
-.Resume .heading {
-  margin: 50px;
+/* --- VARIABLES --- */
+:root {
+  --primary-color: #35ad94;
+  --bg-card: #212428;
+  --line-color: #d9dee2;
+  --text-white: #ffffff;
+  --text-dim: rgba(255, 255, 255, 0.7);
 }
 
 .Resume {
-  margin-bottom: 10rem;
+  padding: 80px 0;
+  margin-bottom: 5rem;
 }
 
-.Resume .content {
-  max-width: 85%;
-  margin: auto;
+/* --- ENCABEZADO PRINCIPAL --- */
+.Resume .heading.text-center {
+  margin-bottom: 60px;
 }
-.Resume .box {
-  padding: 40px;
+
+.Resume .heading h4 {
+  color: var(--primary-color);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-size: 14px;
 }
-.Resume hr {
-  margin: 30px 0 30px 0;
-  border: 1px solid black;
-  background-color: black;
-  transition: 0.5s;
+
+.Resume .heading h1 {
+  font-size: 50px;
+  font-weight: 800;
+  color: var(--text-white);
+  margin: 10px 0 30px;
 }
-/* .Resume hr:hover {
-    margin: 30px 0 30px 0;
-    border: 1px solid white;
-    background-color: white;
-  } */
-.Resume .rate .btn_shadow {
-  color: #35ad94;
-  padding: 15px 30px;
-  font-weight: bold;
-  transition: 0.5s;
+
+/* --- CONTENEDOR DE CONTENIDO --- */
+.resume-wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
-.Resume p {
-  font-size: 18px;
-  transition: 0.5s;
+
+.resume-section {
+  position: relative;
+  margin-bottom: 80px;
 }
-.Resume .box {
+
+.resume-section .heading {
   margin-bottom: 40px;
-  position: relative;
-}
-.Resume .btn_shadow:hover {
-  transform: translate(0);
-}
-.Resume .box:hover .btn_shadow {
-  background: #35ad94;
-  box-shadow: none;
-  color: white;
-}
-.Resume .box:hover p {
-  color: white;
-}
-.Resume .box:hover hr {
-  border: 1px solid white;
-  background-color: white;
-}
-.Resume .content-section {
-  position: relative;
+  margin-left: 60px;
 }
 
-.Resume .left {
-  position: relative;
+.resume-section .heading h1 {
+  font-size: 36px;
+  color: var(--text-white);
 }
 
-.Resume .left::after {
+/* --- LÍNEA DE TIEMPO VERTICAL --- */
+.resume-section::after {
   content: "";
   position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
+  top: 100px;
+  left: 30px;
+  height: calc(100% - 100px);
   width: 5px;
-  background: #d9dee2;
-  z-index: -1;
+  background: var(--line-color);
+  z-index: 1;
 }
-.Resume .box::after {
-  content: "";
-  position: absolute;
-  top: 13%;
-  left: -8%;
-  height: 5px;
-  width: 50px;
-  background: #d9dee2;
+
+/* --- TARJETAS (CARDS) --- */
+.Resume .content {
+  margin-left: 60px;
+  position: relative;
 }
+
+.Resume .box {
+  background: var(--bg-card);
+  padding: 40px;
+  border-radius: 15px;
+  margin-bottom: 30px;
+  position: relative;
+  transition: 0.5s ease;
+  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.Resume .box:hover {
+  background: var(--primary-color);
+  transform: translateY(-5px);
+}
+
+/* --- ELEMENTOS DENTRO DE LA TARJETA --- */
+.Resume .box h2 {
+  font-size: 24px;
+  color: var(--text-white);
+  transition: 0.5s;
+}
+
+.Resume .box span {
+  color: var(--primary-color);
+  font-size: 14px;
+  transition: 0.5s;
+}
+
+.Resume .box p {
+  font-size: 17px;
+  line-height: 1.6;
+  color: var(--text-dim);
+  margin-top: 15px;
+  transition: 0.5s;
+}
+
+.Resume hr {
+  margin: 20px 0;
+  border: 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.Resume .box:hover h2,
+.Resume .box:hover span,
+.Resume .box:hover p {
+  color: var(--text-white);
+}
+
+/* --- PUNTOS Y LÍNEAS CONECTORAS --- */
 .Resume .box::before {
   content: "";
   position: absolute;
-  top: 11%;
-  left: -10%;
-  height: 10px;
-  width: 10px;
-  background: #fff;
-  border: 5px solid #d9dee2;
+  top: 45px;
+  left: -40px; /* Ajustado para caer sobre la línea vertical */
+  height: 16px;
+  width: 16px;
+  background: #1a1c20;
+  border: 4px solid var(--line-color);
   border-radius: 50%;
   z-index: 5;
   transition: 0.5s;
 }
+
+.Resume .box::after {
+  content: "";
+  position: absolute;
+  top: 52px;
+  left: -30px;
+  height: 4px;
+  width: 30px;
+  background: var(--line-color);
+  z-index: 1;
+}
+
 .Resume .box:hover::before {
-  background: #35ad94;
+  background: var(--primary-color);
+  border-color: var(--text-white);
+}
+
+/* --- BOTONES --- */
+.Resume .rate .btn_shadow {
+  background: #1a1c20;
+  color: var(--primary-color);
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+  border: none;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
 }
 
 .btn_download {
   display: inline-block;
-  padding: 12px 24px;
-  background-color: #007bff;
+  padding: 15px 30px;
+  background-color: var(--primary-color);
   color: white;
   font-weight: bold;
-  border-radius: 6px;
+  border-radius: 8px;
   text-decoration: none;
-  transition: background-color 0.3s ease;
+  transition: 0.4s;
+  box-shadow: 0 10px 20px rgba(53, 173, 148, 0.2);
 }
 
 .btn_download:hover {
-  background-color: #0056b3;
+  background-color: #2b8e79;
+  transform: translateY(-3px);
 }
 
+/* --- RESPONSIVE --- */
 @media (max-width: 768px) {
-  .Resume .d_flex {
-    flex-direction: column;
+  .Resume .heading h1 {
+    font-size: 36px;
   }
-  .Resume .left::after {
-    top: 14%;
-    height: 80vh;
+  .resume-wrapper {
+    padding: 0 15px;
+  }
+
+  .resume-section::after {
+    left: 15px;
+  }
+
+  .Resume .content {
+    margin-left: 40px;
+  }
+
+  .Resume .box::before {
+    left: -35px;
+  }
+
+  .Resume .box::after {
+    left: -25px;
+    width: 25px;
+  }
+
+  .resume-section .heading {
+    margin-left: 40px;
   }
 }
 
-@media (max-width: 450px) {
-  /* .Resume .d_flex {
-    flex-direction: column;
-  } */
-  .Resume .left::after {
-    /* top: 14%; */
-    height: 105vh;
+@media (max-width: 480px) {
+  .Resume .box {
+    padding: 25px;
+  }
+  .Resume .box h2 {
+    font-size: 20px;
   }
 }

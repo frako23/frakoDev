@@ -1,12 +1,6 @@
 /* eslint-disable react/prop-types */
-import React, { useState } from "react";
-import { FlaskIcon } from "../../assets/icons/flask";
-import { ReactIcon } from "../../assets/icons/react";
-import { PythonIcon } from "../../assets/icons/python";
-import { JavaScriptIcon } from "../../assets/icons/javascript";
-import { PostgreSQLIcon } from "../../assets/icons/postgre";
+import { useState } from "react";
 import { IconSwitch } from "../../logic/iconSwitch";
-import { CSSIcon } from "../../assets/icons/css";
 
 const Card = ({
   title,
@@ -82,13 +76,12 @@ const Card = ({
                 >
                   VIEW PROJECT<i className="fas fa-chevron-right"></i>
                 </a>{" "}
-                <div style={{ width: "16rem" }}>
-                  {/* <JavaScriptIcon />
-                  <ReactIcon />
-                  <FlaskIcon />
-                  <PythonIcon />
-                  <PostgreSQLIcon /> */}
-                  {technologies.map((tech) => IconSwitch(tech))}
+                <div className="tech-container">
+                  {technologies.map((tech, index) => (
+                    <div key={index} className="tech-icon-wrapper" title={tech}>
+                      {IconSwitch(tech)}
+                    </div>
+                  ))}
                 </div>
               </div>
               <button className="close-modal btn_shadow" onClick={toggleModal}>

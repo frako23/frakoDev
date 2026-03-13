@@ -1,5 +1,41 @@
 const Portfolio_data = [
   {
+    category: "FULL STACK WEB APPLICATION",
+    title: "Venutis Gourmet E-commerce",
+    technologies: [
+      "Next.js",
+      "Prisma",
+      "PostgreSQL",
+      "Cloudinary",
+      "Tailwind CSS",
+      "Typescript",
+    ],
+    image:
+      "https://raw.githubusercontent.com/frako23/frakoDev/main/src/components/Portfolio/img/venutis.avif", // Asegúrate de subir la imagen a esta ruta
+    description: [
+      "- Built from scratch using Next.js App Router for optimal performance and SEO",
+      "- Integrated Server Actions for secure and fast data mutation without traditional API endpoints",
+      "- Custom-built Administrative Panel for full inventory, order, and content management",
+      "- Secure image hosting and optimization using Cloudinary",
+      "- Type-safe database management with Prisma ORM and PostgreSQL",
+    ],
+    proyectUrl: "https://venutisgourmet.com/", // Reemplaza con la URL real
+  },
+  {
+    category: "CORPORATE WEB PAGE",
+    title: "Atenas Grupo Consultor",
+    technologies: ["WordPress", "Elementor", "HTML", "CSS"],
+    image:
+      "https://raw.githubusercontent.com/frako23/frakoDev/main/src/components/Portfolio/img/atenas.avif", // Asegúrate de subir la imagen a esta ruta
+    description: [
+      "- Professional corporate website built from scratch for a leading consulting group",
+      "- Advanced customization using Elementor Pro for a unique brand identity",
+      "- Performance optimization and SEO structure to enhance digital presence",
+      "- Dynamic content management for blog and service sections",
+    ],
+    proyectUrl: "https://atenasconsultores.com/",
+  },
+  {
     category: "WEB PAGE",
     technologies: ["JavaScript", "HTML", "CSS"],
     title: "Brenda Fitness",
@@ -58,7 +94,7 @@ const Portfolio_data = [
   },
   {
     category: "Web Application",
-    technologies: ["Astro", "Tailwind", "React"],
+    technologies: ["Astro", "Tailwind CSS", "React"],
     title: "Medical Uniforms store web catalog",
     image:
       "https://raw.githubusercontent.com/frako23/frakoDev/main/src/components/Portfolio/img/uniforms.avif",

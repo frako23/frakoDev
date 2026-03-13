@@ -1,212 +1,206 @@
+/* --- VARIABLES Y RESET --- */
+:root {
+  --primary-color: #35ad94;
+  --secondary-color: #f6ae4a;
+  --bg-dark: #212428;
+  --text-dim: rgba(255, 255, 255, 0.8);
+}
+
 .hero {
   position: relative;
+  min-height: 85vh;
+  display: flex;
+  align-items: center;
+  background-color: transparent; /* O el color de fondo de tu app */
 }
-.hero h3 {
-  font-weight: 100;
-  letter-spacing: 2px;
-}
+
+/* --- TEXTOS --- */
 .hero h1 {
-  font-size: 60px;
-  font-weight: bold;
+  font-size: 65px;
+  font-weight: 800;
+  line-height: 1.1;
+  letter-spacing: -1px;
+  color: white;
 }
 
 .hero h1 span {
-  color: #35ad94;
+  color: var(--primary-color);
 }
+
 .hero h2 {
-  font-size: 50px;
-  font-weight: bold;
-  color: #35ad94;
+  font-size: 45px;
+  font-weight: 700;
+  margin-top: 15px;
+  color: white;
 }
+
 .hero h2 span {
-  color: #f6ae4a;
+  color: var(--secondary-color);
 }
+
 .hero p {
-  color: white;
-  font-size: 18px;
-  line-height: 30px;
+  color: var(--text-dim);
+  font-size: 19px;
+  line-height: 1.6;
   margin-top: 30px;
-}
-.hero_btn {
-  margin-top: 20%;
-}
-.hero_btn h4 {
-  font-weight: 500;
-  letter-spacing: 2px;
-  color: white;
-  font-size: 15px;
-  margin: 30px 0 0 0;
-}
-.hero_btn button {
-  /* margin-right: 30px; */
-  margin-top: 1rem;
-  margin-left: 1rem;
+  max-width: 650px;
 }
 
-.btn_brands {
-  border-radius: 6px;
-  transition: 0.3s all ease;
-  cursor: pointer;
-  color: #000;
-  transition: 0.5s;
-  width: 60px;
-  height: 60px;
-}
-.btn_brands {
-  background: linear-gradient(145deg, #e2e8ec, #ffffff);
-  /* box-shadow: 4px 4px 8px #cbcbcb, -4px -4px 8px #ffffff; */
-}
-.btn_brands:hover {
-  background: #35ad94;
-  color: white;
-  transform: translateY(-10px);
-}
-.hero_btn i {
-  font-size: 30px;
-}
-
-.hero_btn button img {
-  width: 20px;
-  height: 20px;
-}
+/* --- COLUMNA IZQUIERDA (CONTENIDO) --- */
 .hero .left {
-  margin-right: 10%;
+  flex: 1;
+  margin-right: 5%;
 }
+
+/* --- COLUMNA DERECHA (IMAGEN) --- */
 .hero .right {
-  width: 40%;
+  flex: 1;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
 }
 
 .hero .right_img {
-  position: relative;
   width: 100%;
-  max-width: 450px; /* Evita que crezca demasiado */
-  aspect-ratio: 4 / 5; /* Mantiene la proporción automáticamente */
-  background: transparent;
-  border-radius: 10px;
-  overflow: hidden; /* Corta la imagen si sobresale del radio */
+  max-width: 480px;
+  background: var(--bg-dark);
+  border-radius: 20px;
+  padding: 15px;
+  box-shadow:
+    10px 10px 30px rgba(0, 0, 0, 0.5),
+    -5px -5px 15px rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  transition: transform 0.5s ease;
+}
+
+.hero .right_img:hover {
+  transform: translateY(-10px);
 }
 
 .hero .right_img img {
   width: 100%;
-  height: 100%;
-  object-fit: cover; /* Ajusta la foto sin deformarla */
+  height: auto;
+  border-radius: 15px;
+  filter: grayscale(15%);
+  transition: 0.5s ease;
   display: block;
+  object-fit: cover;
 }
-@media screen and (max-width: 768px) {
-  .hero .right,
-  .hero .left {
-    width: 100%;
-    margin-left: 20px;
-    margin-bottom: 8rem;
-  }
 
-  .hero .right_img img {
-    position: relative;
-    top: 0%;
-    width: 20rem;
-    align-self: center;
-  }
+.hero .right_img:hover img {
+  filter: grayscale(0%);
+}
 
-  .hero .f_flex {
-    flex-direction: column;
-    /* flex-direction: column-reverse; */
+/* --- BOTONES Y SKILLS --- */
+.hero_btn {
+  margin-top: 60px;
+  display: flex;
+  gap: 50px;
+}
+
+.hero_btn h4 {
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: var(--primary-color);
+  font-size: 13px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.btn_brands {
+  width: 60px;
+  height: 60px;
+  border-radius: 10px;
+  background: var(--bg-dark);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: var(--primary-color);
+  font-size: 26px;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  margin-right: 15px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.btn_brands:hover {
+  background: var(--primary-color);
+  color: white;
+  transform: translateY(-8px);
+  border-color: var(--primary-color);
+  box-shadow: 0 10px 20px rgba(53, 173, 148, 0.3);
+}
+
+.btn_brands i {
+  line-height: 0;
+}
+
+/* --- RESPONSIVE DESIGN --- */
+
+/* Tablets y Laptops pequeñas */
+@media (max-width: 1100px) {
+  .hero h1 {
+    font-size: 50px;
+  }
+  .hero h2 {
+    font-size: 35px;
   }
   .hero .right_img {
-    width: 100%;
-    height: 54vh;
-    display: flex;
+    max-width: 380px;
+  }
+}
+
+/* Móviles y Tablets medianas */
+@media (max-width: 992px) {
+  .hero {
+    padding: 60px 0;
+    text-align: center;
   }
 
-  .hero .right,
+  .hero .container.f_flex {
+    flex-direction: column-reverse; /* Imagen arriba en móviles */
+    align-items: center;
+  }
+
   .hero .left {
-    width: 50%;
-    align-self: center;
+    margin-right: 0;
+    margin-top: 50px;
+    width: 100%;
   }
 
-  .hero .right_img {
-    background: transparent;
+  .hero .right {
+    width: 100%;
+    justify-content: center;
   }
 
-  header ul li a {
-    color: black;
+  .hero p {
+    margin: 30px auto;
   }
 
   .hero_btn {
-    margin-top: 0;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 40px;
   }
 
-  .top {
-    margin-top: 1rem;
-  }
-}
-
-/* Extra small devices (phones, 600px and down) */
-
-@media only screen and (max-width: 430px) {
-  .hero .right_img img {
-    /* top: 13%;
-    right: -6%; */
-    width: 18rem;
-  }
-  .hero .right,
-  .hero .left {
-    width: 65%;
+  .btn_brands {
+    margin: 0 10px;
   }
 }
 
-@media only screen and (max-width: 375px) {
-  /* .hero .right_img img {
-    top: 16%;
-    right: 16%;
-  } */
-  .hero .right,
-  .hero .left {
-    width: 80%;
+/* Teléfonos pequeños */
+@media (max-width: 480px) {
+  .hero h1 {
+    font-size: 38px;
   }
-}
-
-@media only screen and (max-width: 320px) {
-  .hero .right,
-  .hero .left {
-    width: 90%;
+  .hero h2 {
+    font-size: 28px;
   }
-}
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-/* @media only screen and (min-width: 600px) {  .hero .right_img img {
-    position: absolute;
-    top: -4%;
-    right: 23%;
-    width: 20rem;
-  }} */
-
-/* Medium devices (landscape tablets, 768px and down) */
-/* @media only screen and (max-width: 768px) {
-  .hero .right_img img {
-    position: absolute;
-    top: 31%;
-    right: 38%;
-    width: 12rem;
+  .hero .right_img {
+    max-width: 300px;
   }
-} */
-
-/* Large devices (laptops/desktops, 992px and up) */
-/* @media only screen and (min-width: 992px) {  .hero .right_img img {
-    position: absolute;
-    top: -4%;
-    right: 23%;
-    width: 20rem;
-  }} */
-
-/* Extra large devices (large laptops and desktops, 1200px and down) */
-@media screen and (max-width: 1200px) and (min-width: 769px) {
-  .hero .right_img img {
-    position: absolute;
-    top: 5%;
-    right: -20%;
-    width: 25rem;
+  .hero p {
+    font-size: 16px;
   }
 }
