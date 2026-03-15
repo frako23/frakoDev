@@ -203,3 +203,49 @@
 .tech-icon-wrapper:hover {
   transform: translateY(-3px); /* Pequeña animación al pasar el mouse */
 }
+
+/* --- AJUSTES PARA MOBILE (Portfolio) --- */
+
+@media (max-width: 768px) {
+  .Portfolio .content {
+    /* Reducimos el padding lateral del contenedor para ganar espacio */
+    padding: 0 15px;
+    gap: 2rem;
+  }
+
+  .Portfolio .box {
+    /* Reducimos el padding interno de la tarjeta de 25px a 15px */
+    padding: 15px;
+    margin-bottom: 2rem;
+  }
+
+  .Portfolio .img {
+    /* Ajustamos la altura de la imagen para que no ocupe toda la pantalla */
+    height: 200px;
+  }
+
+  .Portfolio .title h2 {
+    /* Bajamos un poco el tamaño de fuente para que no rompa en 2 líneas innecesarias */
+    font-size: 1.3rem;
+    line-height: 1.2;
+  }
+
+  .Portfolio .category span {
+    font-size: 11px;
+  }
+}
+
+/* Ajuste extra para pantallas muy pequeñas (iPhone SE, etc) */
+@media (max-width: 450px) {
+  .Portfolio .content {
+    padding: 0 10px;
+  }
+
+  .Portfolio .box {
+    padding: 12px;
+  }
+
+  .Portfolio .heading h1 {
+    font-size: 30px; /* Evita que el título principal se corte */
+  }
+}
