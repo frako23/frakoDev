@@ -62,9 +62,9 @@ const Home = () => {
                       <i className="fab fa-linkedin-in"></i>
                     </button>
                   </a>
-                  <a href="https://x.com/frakoDev">
+                  <a href="https://www.instagram.com/frakodev/">
                     <button className="btn_brands">
-                      <i className="fa-brands fa-x-twitter"></i>
+                      <i className="fa-brands fa-instagram"></i>
                     </button>
                   </a>
                 </div>
