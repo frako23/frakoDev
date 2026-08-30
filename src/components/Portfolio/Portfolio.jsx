@@ -5,14 +5,14 @@ import Portfolio_data from "./Portfolio_data";
 const Portfolio = () => {
   return (
     <>
-      <section className="Portfolio top" id="portfolio">
+      <section className="Portfolio section" id="portfolio">
         <div className="container">
           <div className="heading text-center ">
             <h4>VISIT MY PORTFOLIO</h4>
             <h1>My Portfolio</h1>
           </div>
 
-          <div className="content">
+          <div className="content portfolio-grid">
             {Portfolio_data.map((value, index) => {
               return (
                 <Card

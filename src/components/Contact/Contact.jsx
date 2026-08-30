@@ -4,17 +4,17 @@ import "./Contact.css";
 const Contact = () => {
   return (
     <>
-      <section className="Contact" id="contact">
+      <section className="Contact section" id="contact">
         <div className="container">
           <div className="heading text-center">
             <h4>CONTACT</h4>
             <h1>Contact With Me</h1>
           </div>
 
-          <div className="content d_flex">
+          <div className="content contact-grid">
             {/* PARTE IZQUIERDA: INFO */}
-            <div className="left">
-              <div className="box_shodow">
+            <div className="left contact-intro surface">
+              <div>
                 <div className="img">
                   {/* <img src={contactImg} alt="Contact Me" /> */}
                 </div>
@@ -38,30 +38,30 @@ const Contact = () => {
             </div>
 
             {/* PARTE DERECHA: FORMULARIO */}
-            <div className="right box_shodow">
-              <form>
+            <div className="right contact-form surface">
+              <form onSubmit={(event) => event.preventDefault()}>
                 <div className="input-group">
-                  <div className="input">
+                  <div className="input field">
                     <span>YOUR NAME</span>
                     <input type="text" name="fullname" required />
                   </div>
-                  <div className="input">
+                  <div className="input field">
                     <span>PHONE NUMBER</span>
                     <input type="text" name="phone" />
                   </div>
                 </div>
 
-                <div className="input">
+                <div className="input field">
                   <span>EMAIL</span>
                   <input type="email" name="email" required />
                 </div>
 
-                <div className="input">
+                <div className="input field">
                   <span>SUBJECT</span>
                   <input type="text" name="subject" />
                 </div>
 
-                <div className="input">
+                <div className="input field message-field">
                   <span>YOUR MESSAGE</span>
                   <textarea
                     cols="30"

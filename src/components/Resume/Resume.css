@@ -1,220 +1,61 @@
-/* --- VARIABLES --- */
-:root {
-  --primary-color: #35ad94;
-  --bg-card: #212428;
-  --line-color: #d9dee2;
-  --text-white: #ffffff;
-  --text-dim: rgba(255, 255, 255, 0.7);
-}
-
-.Resume {
-  padding: 80px 0;
-  margin-bottom: 5rem;
-}
-
-/* --- ENCABEZADO PRINCIPAL --- */
 .Resume .heading.text-center {
-  margin-bottom: 60px;
-}
-
-.Resume .heading h4 {
-  color: var(--primary-color);
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  font-size: 14px;
+  text-align: left;
+  display: grid;
+  gap: 0.75rem;
 }
 
 .Resume .heading h1 {
-  font-size: 50px;
-  font-weight: 800;
-  color: var(--text-white);
-  margin: 10px 0 30px;
+  font-family: "Fraunces", serif;
+  font-size: clamp(2.4rem, 5vw, 4rem);
 }
 
-/* --- CONTENEDOR DE CONTENIDO --- */
 .resume-wrapper {
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 0 20px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.25rem;
 }
 
 .resume-section {
   position: relative;
-  margin-bottom: 80px;
 }
 
 .resume-section .heading {
-  margin-bottom: 40px;
-  margin-left: 60px;
+  margin: 0 0 1.25rem;
 }
 
 .resume-section .heading h1 {
-  font-size: 36px;
-  color: var(--text-white);
+  font-size: 2rem;
 }
 
-/* --- LÍNEA DE TIEMPO VERTICAL --- */
-.resume-section::after {
-  content: "";
-  position: absolute;
-  top: 100px;
-  left: 30px;
-  height: calc(100% - 100px);
-  width: 5px;
-  background: var(--line-color);
-  z-index: 1;
-}
-
-/* --- TARJETAS (CARDS) --- */
 .Resume .content {
-  margin-left: 60px;
-  position: relative;
+  margin-left: 0;
+  display: grid;
+  gap: 1rem;
 }
 
 .Resume .box {
-  background: var(--bg-card);
-  padding: 40px;
-  border-radius: 15px;
-  margin-bottom: 30px;
-  position: relative;
-  transition: 0.5s ease;
-  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.3);
-  border: 1px solid rgba(255, 255, 255, 0.05);
+  padding: 1.35rem;
+}
+
+.Resume .box h2 {
+  font-size: 1.15rem;
+}
+
+.Resume .box span,
+.Resume .box p {
+  color: var(--muted);
 }
 
 .Resume .box:hover {
-  background: var(--primary-color);
-  transform: translateY(-5px);
-}
-
-/* --- ELEMENTOS DENTRO DE LA TARJETA --- */
-.Resume .box h2 {
-  font-size: 24px;
-  color: var(--text-white);
-  transition: 0.5s;
-}
-
-.Resume .box span {
-  color: var(--primary-color);
-  font-size: 14px;
-  transition: 0.5s;
-}
-
-.Resume .box p {
-  font-size: 17px;
-  line-height: 1.6;
-  color: var(--text-dim);
-  margin-top: 15px;
-  transition: 0.5s;
-}
-
-.Resume hr {
-  margin: 20px 0;
-  border: 0;
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-.Resume .box:hover h2,
-.Resume .box:hover span,
-.Resume .box:hover p {
-  color: var(--text-white);
-}
-
-/* --- PUNTOS Y LÍNEAS CONECTORAS --- */
-.Resume .box::before {
-  content: "";
-  position: absolute;
-  top: 45px;
-  left: -40px; /* Ajustado para caer sobre la línea vertical */
-  height: 16px;
-  width: 16px;
-  background: #1a1c20;
-  border: 4px solid var(--line-color);
-  border-radius: 50%;
-  z-index: 5;
-  transition: 0.5s;
-}
-
-.Resume .box::after {
-  content: "";
-  position: absolute;
-  top: 52px;
-  left: -30px;
-  height: 4px;
-  width: 30px;
-  background: var(--line-color);
-  z-index: 1;
-}
-
-.Resume .box:hover::before {
-  background: var(--primary-color);
-  border-color: var(--text-white);
-}
-
-/* --- BOTONES --- */
-.Resume .rate .btn_shadow {
-  background: #1a1c20;
-  color: var(--primary-color);
-  padding: 10px 20px;
-  border-radius: 5px;
-  font-weight: bold;
-  border: none;
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+  background: color-mix(in srgb, var(--surface) 70%, var(--accent) 16%);
 }
 
 .btn_download {
-  display: inline-block;
-  padding: 15px 30px;
-  background-color: var(--primary-color);
-  color: white;
-  font-weight: bold;
-  border-radius: 8px;
-  text-decoration: none;
-  transition: 0.4s;
-  box-shadow: 0 10px 20px rgba(53, 173, 148, 0.2);
+  justify-self: start;
 }
 
-.btn_download:hover {
-  background-color: #2b8e79;
-  transform: translateY(-3px);
-}
-
-/* --- RESPONSIVE --- */
-@media (max-width: 768px) {
-  .Resume .heading h1 {
-    font-size: 36px;
-  }
+@media (max-width: 900px) {
   .resume-wrapper {
-    padding: 0 15px;
-  }
-
-  .resume-section::after {
-    left: 15px;
-  }
-
-  .Resume .content {
-    margin-left: 40px;
-  }
-
-  .Resume .box::before {
-    left: -35px;
-  }
-
-  .Resume .box::after {
-    left: -25px;
-    width: 25px;
-  }
-
-  .resume-section .heading {
-    margin-left: 40px;
-  }
-}
-
-@media (max-width: 480px) {
-  .Resume .box {
-    padding: 25px;
-  }
-  .Resume .box h2 {
-    font-size: 20px;
+    grid-template-columns: 1fr;
   }
 }

@@ -1,27 +1,38 @@
+import { useEffect, useState } from "react";
 import Header from "./components/Head/Header";
-// import Features from "./components/Features/Features";
 import Home from "./components/Hero/Home";
 import Portfolio from "./components/Portfolio/Portfolio";
 import Resume from "./components/Resume/Resume";
-// import Testimonial from "./components/Testimonial/Testimonial";
-// import Blog from "./components/Blog/Blog"
 import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer";
 import "./App.css";
 
+const FloatingNav = () => (
+  <nav className="floating-nav" aria-label="Quick section navigation">
+    <span className="floating-nav-label">Jump to</span>
+    <a href="#resume">Resume</a>
+    <a href="#portfolio">Work</a>
+    <a href="#contact">Contact</a>
+  </nav>
+);
+
 const App = () => {
+  const [theme, setTheme] = useState("dark");
+
+  useEffect(() => {
+    document.documentElement.dataset.theme = theme;
+  }, [theme]);
+
   return (
-    <>
-      <Header />
+    <div className="site-shell">
+      <Header theme={theme} onToggleTheme={() => setTheme((current) => (current === "dark" ? "light" : "dark"))} />
+      <FloatingNav />
       <Home />
-      {/* <Features /> */}
       <Resume />
       <Portfolio />
-      {/* <Testimonial /> */}
-      {/* <Blog /> */}
       <Contact />
       <Footer />
-    </>
+    </div>
   );
 };
 

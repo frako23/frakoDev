@@ -1,251 +1,155 @@
-/* --- SECCIÓN PORTFOLIO --- */
-.Portfolio {
-  padding: 80px 0;
-}
-
 .Portfolio .content {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 3rem;
-  padding: 0 5rem;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 1.2rem;
 }
 
-/* --- TARJETA (CARD) --- */
+.Portfolio { scroll-margin-top: 5rem; }
+
 .Portfolio .box {
-  background: var(--bg-card); /* Color #161b22 definido en App.css */
-  border-radius: 15px;
-  padding: 25px;
-  border: 1px solid var(--border-color);
-  box-shadow: var(--shadow-dark);
-  transition: all 0.4s ease;
-  position: relative;
-  cursor: pointer;
+  grid-column: span 6;
+  padding: 1rem;
+  overflow: hidden;
+  min-height: 0;
 }
 
-.Portfolio .box:hover {
-  transform: translateY(-10px);
-  background: var(--bg-card-hover);
-  border-color: var(--primary-color);
+.portfolio-card {
+  display: flex;
+  flex-direction: column;
+  align-self: start;
+  background: linear-gradient(145deg, var(--surface-strong), var(--surface));
 }
 
 .Portfolio .img {
+  display: block;
   width: 100%;
-  height: 250px; /* Altura fija para uniformidad */
+  padding: 0;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
   overflow: hidden;
-  border-radius: 10px;
-  margin-bottom: 20px;
+  border-radius: calc(var(--radius-lg) - 6px);
+  aspect-ratio: 16 / 10;
+  margin-bottom: 1rem;
 }
 
 .Portfolio .img img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: 0.5s ease;
+  transition: transform 260ms ease;
 }
 
-.Portfolio .box:hover img {
-  transform: scale(1.1);
-}
-
-.Portfolio .category {
-  margin-bottom: 15px;
+.Portfolio .box:hover .img img {
+  transform: scale(1.04);
 }
 
 .Portfolio .category span {
-  color: var(--primary-color);
-  font-size: 13px;
-  letter-spacing: 2px;
+  color: var(--accent);
+  font-size: 0.75rem;
+  letter-spacing: 0.18em;
   text-transform: uppercase;
-  font-weight: 600;
+  font-family: "IBM Plex Mono", monospace;
 }
 
 .Portfolio .title h2 {
-  font-size: 24px;
-  font-weight: 700;
-  color: var(--text-main);
-  transition: 0.3s;
+  margin-top: 0.45rem;
+  font-size: 1.35rem;
+  line-height: 1.15;
 }
 
-.Portfolio .box:hover .title h2 {
-  color: var(--primary-color);
+.Portfolio .title { display: flex; align-items: center; justify-content: space-between; gap: 1rem; }
+.Portfolio .arrow {
+  display: grid; place-items: center; width: 2.5rem; height: 2.5rem;
+  border: 1px solid var(--border); border-radius: 50%; background: var(--surface-strong); color: var(--accent);
 }
+.portfolio-link {
+  align-self: flex-start; margin-top: 1.4rem; padding: 0; border: 0; background: transparent;
+  color: var(--text); font-family: "IBM Plex Mono", monospace; font-size: 0.75rem; letter-spacing: 0.08em; text-transform: uppercase;
+}
+.portfolio-link i { color: var(--accent); margin-left: 0.35rem; }
 
 .Portfolio .arrow {
-  position: absolute;
-  right: 30px;
-  bottom: 30px;
-  color: var(--primary-color);
-  font-size: 20px;
-  opacity: 0;
-  transform: translateX(-10px);
-  transition: all 0.3s ease;
-}
-
-.Portfolio .box:hover .arrow {
   opacity: 1;
-  transform: translateX(0);
+  position: static;
 }
 
-/* --- MODAL (POPUP) --- */
-.modal {
+.Portfolio .modal {
   position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 1000;
+  z-index: 100;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  padding: 1rem;
 }
 
 .overlay {
   position: absolute;
-  width: 100%;
-  height: 100%;
-  background: rgba(13, 17, 23, 0.9); /* Fondo oscuro translúcido */
-  backdrop-filter: blur(5px); /* Efecto de desenfoque */
+  inset: 0;
+  background: rgba(7, 10, 14, 0.72);
+  backdrop-filter: blur(14px);
 }
+
+body.active-modal { overflow: hidden; }
 
 .modal-content {
   position: relative;
-  background: var(--bg-card);
-  width: 85%;
-  max-width: 1000px;
-  max-height: 90vh;
-  border-radius: 20px;
-  padding: 50px;
-  border: 1px solid var(--border-color);
-  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
-  display: flex;
-  gap: 40px;
-  overflow-y: auto;
-}
-
-.modal-img {
-  flex: 1;
-}
-
-.modal-img img {
-  width: 100%;
-  border-radius: 15px;
-  box-shadow: var(--shadow-dark);
-}
-
-.modal-text {
-  flex: 1;
-  color: var(--text-main);
+  z-index: 1;
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(300px, 0.95fr);
+  width: min(980px, 100%);
+  max-height: min(720px, calc(100vh - 2rem));
+  overflow: auto;
+  border-radius: var(--radius-xl);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
+  padding: 1.25rem;
+  gap: 1.5rem;
 }
 
 .modal-text h1 {
-  font-size: 35px;
-  margin-bottom: 20px;
-  color: var(--text-main);
+  font-family: "Fraunces", serif;
+  font-size: clamp(2rem, 4vw, 3.2rem);
 }
 
-.modal-text ul {
-  padding-left: 20px;
-  margin-bottom: 30px;
-}
-
-.modal-text li {
-  color: var(--text-dim);
-  margin-bottom: 10px;
-  list-style: disc;
-}
+.modal-img { min-width: 0; align-self: center; }
+.modal-img img { width: 100%; border-radius: var(--radius-lg); object-fit: cover; }
+.modal-text { position: relative; padding: 0.5rem 0.75rem 0.5rem 0; }
+.modal-kicker { color: var(--accent); font: 0.72rem "IBM Plex Mono", monospace; letter-spacing: 0.15em; text-transform: uppercase; }
+.modal-description { max-height: 210px; overflow: auto; color: var(--muted); line-height: 1.6; padding-right: 0.5rem; }
+.modal-footer { display: flex; align-items: center; justify-content: space-between; gap: 1rem; margin-top: 1.5rem; }
+.modal-footer > a { padding: 0.8rem 1rem; text-decoration: none; color: var(--text); }
+.tech-container { display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 0.5rem; }
+.tech-icon-wrapper { display: inline-flex; align-items: center; gap: 0.4rem; padding: 0.5rem 0.65rem; border: 1px solid var(--border); border-radius: 999px; background: var(--surface-strong); color: var(--muted); font: 0.7rem "IBM Plex Mono", monospace; transition: color 180ms ease, border-color 180ms ease, transform 180ms ease; }
+.tech-icon-wrapper:hover { color: var(--text); border-color: var(--accent); transform: translateY(-2px); }
+.tech-icon-wrapper svg { width: 1.15rem; height: 1.15rem; }
 
 .close-modal {
   position: absolute;
-  top: 20px;
-  right: 20px;
-  width: 45px !important;
-  height: 45px !important;
-  display: flex !important;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50% !important;
-  background-color: aliceblue;
-  cursor: pointer;
+  top: 0;
+  right: 0;
+  display: grid;
+  place-items: center;
+  width: 2.25rem;
+  height: 2.25rem;
+  border-radius: 50%;
+  background: var(--surface-strong);
+  border: 1px solid var(--border);
+  color: var(--text);
 }
 
-/* --- RESPONSIVE --- */
 @media (max-width: 1024px) {
-  .Portfolio .content {
-    grid-template-columns: 1fr;
-    padding: 0 2rem;
-  }
-
-  .modal-content {
-    flex-direction: column;
-    padding: 30px;
-    width: 95%;
-  }
-}
-
-.tech-container {
-  display: flex;
-  flex-wrap: wrap; /* Si hay muchos iconos, bajan a la siguiente línea */
-  gap: 12px; /* Espacio uniforme entre iconos */
-  align-items: center; /* Centra verticalmente */
-  justify-content: flex-start; /* Alinea a la izquierda (o 'center' si prefieres) */
-  margin-top: 20px;
-  width: 100%; /* Ocupa el ancho disponible del modal/card */
-}
-
-/* Estilo para que cada icono tenga un tamaño consistente */
-.tech-icon-wrapper {
-  transition: transform 0.3s ease;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.tech-icon-wrapper:hover {
-  transform: translateY(-3px); /* Pequeña animación al pasar el mouse */
-}
-
-/* --- AJUSTES PARA MOBILE (Portfolio) --- */
-
-@media (max-width: 768px) {
-  .Portfolio .content {
-    /* Reducimos el padding lateral del contenedor para ganar espacio */
-    padding: 0 15px;
-    gap: 2rem;
-  }
-
   .Portfolio .box {
-    /* Reducimos el padding interno de la tarjeta de 25px a 15px */
-    padding: 15px;
-    margin-bottom: 2rem;
-  }
-
-  .Portfolio .img {
-    /* Ajustamos la altura de la imagen para que no ocupe toda la pantalla */
-    height: 200px;
-  }
-
-  .Portfolio .title h2 {
-    /* Bajamos un poco el tamaño de fuente para que no rompa en 2 líneas innecesarias */
-    font-size: 1.3rem;
-    line-height: 1.2;
-  }
-
-  .Portfolio .category span {
-    font-size: 11px;
+    grid-column: span 12;
   }
 }
 
-/* Ajuste extra para pantallas muy pequeñas (iPhone SE, etc) */
-@media (max-width: 450px) {
-  .Portfolio .content {
-    padding: 0 10px;
-  }
+@media (max-width: 600px) { .Portfolio .box { grid-column: span 12; } }
 
-  .Portfolio .box {
-    padding: 12px;
-  }
-
-  .Portfolio .heading h1 {
-    font-size: 30px; /* Evita que el título principal se corte */
-  }
+@media (max-width: 700px) {
+  .modal-content { grid-template-columns: 1fr; max-height: calc(100vh - 1rem); padding: 0.8rem; }
+  .modal-text { padding: 0.5rem; }
+  .modal-footer { align-items: flex-start; flex-direction: column; }
+  .tech-container { justify-content: flex-start; }
 }

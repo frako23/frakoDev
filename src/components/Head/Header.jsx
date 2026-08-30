@@ -1,22 +1,34 @@
-import { useState } from "react";
+/* eslint-disable react/prop-types */
+import { useEffect, useState } from "react";
 import "./header.css";
 // import logo from "../pic/logo.png"
 
-const Header = () => {
+const Header = ({ theme, onToggleTheme }) => {
   // fixed Header
-  window.addEventListener("scroll", function () {
-    const header = document.querySelector(".header");
-    header.classList.toggle("active", window.scrollY > 100);
-  });
+  useEffect(() => {
+    const onScroll = () => {
+      const header = document.querySelector(".header");
+      if (header) {
+        header.classList.toggle("active", window.scrollY > 100);
+      }
+    };
+
+    window.addEventListener("scroll", onScroll);
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
   // Toogle Menu
   const [Mobile, setMobile] = useState(false);
   return (
     <>
       <header className="header">
         <div className="container d_flex">
-          <div className="logo">
-            <img src="" alt="" />
-          </div>
+          <a className="logo" href="#home" aria-label="Francisco Orozco home">
+            <span className="logo-mark">FR</span>
+            <span className="logo-copy">
+              <strong>Francisco Orozco</strong>
+              <small>IT Development Lead</small>
+            </span>
+          </a>
 
           <div className="navlink">
             <ul
@@ -44,6 +56,11 @@ const Header = () => {
               </li> */}
               <li>
                 <a href="#contact">contact</a>
+              </li>
+              <li className="theme-item">
+                <button type="button" className="theme-toggle" onClick={onToggleTheme}>
+                  {theme === "dark" ? "light mode" : "dark mode"}
+                </button>
               </li>
               {/* <li>
                 <button className='home-btn'>BUY NOW</button>
