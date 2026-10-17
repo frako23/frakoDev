@@ -25,11 +25,11 @@ const ResumeApi = [
     rate: "4.80/5",
   },
 
-  // Experience (most recent first)
+  // Experience as a developer (most recent first)
   {
     id: 4,
     category: "experience",
-    year: "Atenas Grupo Consultor (Jan 2025 - Nov25)",
+    year: "Atenas Grupo Consultor (Jan 2025 - Nov 2025)",
     title: "IT Development Lead",
     desc: "Lead multidisciplinary development teams, coordinate daily activities, integrate external projects, and promote emerging technologies.",
     rate: "5.00/5",
@@ -68,7 +68,7 @@ const ResumeApi = [
   },
   {
     id: 9,
-    category: "experience",
+    category: "background",
     year: "Ridery (Oct 2021 - Jan 2022)",
     title: "Account Executive",
     desc: "Acquired 42 corporate clients and generated $7,423 in revenue through prospecting and effective sales presentations.",
@@ -76,7 +76,7 @@ const ResumeApi = [
   },
   {
     id: 10,
-    category: "experience",
+    category: "background",
     year: "Citizens Inc. (Sep 2017 - Sep 2021)",
     title: "International Financial Advisor",
     desc: "Built a personal client portfolio through cold calling and follow-ups. Closed sales and recruited new advisors.",
@@ -84,7 +84,7 @@ const ResumeApi = [
   },
   {
     id: 11,
-    category: "experience",
+    category: "background",
     year: "FTG Investing & Consulting (Nov 2018 - Aug 2019)",
     title: "Marketing & Advertising Coordinator",
     desc: "Managed marketing requirements across consortium companies, coordinating digital, outdoor, and trade marketing efforts.",
@@ -92,7 +92,7 @@ const ResumeApi = [
   },
   {
     id: 12,
-    category: "experience",
+    category: "background",
     year: "Samsung Electronics (Aug 2016 - Aug 2017)",
     title: "Key Account Manager",
     desc: "Managed B2B relationships with distributors and retailers. Oversaw credit, logistics, and product rotation to meet sales quotas.",
@@ -100,7 +100,7 @@ const ResumeApi = [
   },
   {
     id: 13,
-    category: "experience",
+    category: "background",
     year: "Movistar (Apr 2013 - Jul 2016)",
     title: "Retention & Acquisition Leader",
     desc: "Led customer loyalty programs and mobile internet acquisition campaigns. Increased ARPU and exceeded client acquisition goals.",
@@ -108,7 +108,7 @@ const ResumeApi = [
   },
   {
     id: 14,
-    category: "experience",
+    category: "background",
     year: "LG Electronics (May 2012 - Jan 2013)",
     title: "Key Account Executive",
     desc: "Achieved $12MM in sales and increased distributor performance by 35%. Managed credit and logistics for B2B clients.",
@@ -116,7 +116,7 @@ const ResumeApi = [
   },
   {
     id: 15,
-    category: "experience",
+    category: "background",
     year: "LG Electronics (Jun 2010 - Apr 2012)",
     title: "Product Executive – Mobile Devices",
     desc: "Promoted LG mobile products across national carriers. Delivered training and presentations to boost channel rotation.",
@@ -124,7 +124,7 @@ const ResumeApi = [
   },
   {
     id: 16,
-    category: "experience",
+    category: "background",
     year: "Nielsen (Feb 2009 - Jun 2010)",
     title: "Account Executive – Market Research",
     desc: "Delivered performance reports for clients like PEPSICO and LG Mobile. Provided strategic insights using Nielsen Advisor software.",
