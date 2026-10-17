@@ -33,6 +33,15 @@
   gap: 1rem;
 }
 
+.resume-section.certifications {
+  grid-column: 1 / -1;
+  margin-top: 1.25rem;
+}
+
+.resume-section.certifications .content {
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 18rem), 1fr));
+}
+
 .Resume .box {
   padding: 1.35rem;
 }

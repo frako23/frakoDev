@@ -64,6 +64,29 @@ const Resume = () => {
                 })}
               </div>
             </div>
+
+            {/* SECCIÓN DE CERTIFICACIONES (ancho completo) */}
+            <div className="resume-section certifications">
+              <div className="heading">
+                <h4>2026</h4>
+                <h1>AI Certifications</h1>
+              </div>
+              <div className="content">
+                {ResumeApi.map((val) => {
+                  if (val.category === "certification") {
+                    return (
+                      <Card
+                        key={val.id}
+                        title={val.title}
+                        year={val.year}
+                        desc={val.desc}
+                      />
+                    );
+                  }
+                  return null;
+                })}
+              </div>
+            </div>
           </div>
         </div>
       </section>

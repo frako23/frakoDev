@@ -130,6 +130,71 @@ const ResumeApi = [
     desc: "Delivered performance reports for clients like PEPSICO and LG Mobile. Provided strategic insights using Nielsen Advisor software.",
     rate: "4.75/5",
   },
+
+  // Certifications - AI (2026, most recent first)
+  {
+    id: 17,
+    category: "certification",
+    year: "Udemy (Sep 2026)",
+    title: "Spec Driven Development (SDD) and AI Agents",
+    desc: "Complete course on spec-driven development and AI agents: AI-assisted software development and agentic workflows.",
+  },
+  {
+    id: 18,
+    category: "certification",
+    year: "Udemy (Sep 2026)",
+    title: "AI Engineer Core Track: LLM Engineering, RAG, QLoRA, Agents",
+    desc: "Training in LLM engineering, retrieval-augmented generation (RAG), QLoRA fine-tuning, and AI agent development.",
+  },
+  {
+    id: 19,
+    category: "certification",
+    year: "Anthropic (Sep 2026)",
+    title: "Introduction to Model Context Protocol",
+    desc: "Fundamentals of MCP for connecting AI models to external tools and data sources.",
+  },
+  {
+    id: 20,
+    category: "certification",
+    year: "Anthropic (Aug 2026)",
+    title: "Model Context Protocol: Advanced Topics",
+    desc: "Advanced MCP concepts for building agentic AI applications.",
+  },
+  {
+    id: 21,
+    category: "certification",
+    year: "Anthropic (Aug 2026)",
+    title: "Claude Code in Action",
+    desc: "Hands-on use of Claude Code in real development workflows.",
+  },
+  {
+    id: 22,
+    category: "certification",
+    year: "Anthropic (Aug 2026)",
+    title: "Introduction to Agent Skills",
+    desc: "Creating and using agent skills to extend agentic AI development.",
+  },
+  {
+    id: 23,
+    category: "certification",
+    year: "Anthropic (Aug 2026)",
+    title: "Introduction to Subagents",
+    desc: "Delegating work to subagents in agentic AI development.",
+  },
+  {
+    id: 24,
+    category: "certification",
+    year: "Anthropic (Aug 2026)",
+    title: "Claude Code 101",
+    desc: "Core concepts and everyday usage of Claude Code.",
+  },
+  {
+    id: 25,
+    category: "certification",
+    year: "Anthropic (Aug 2026)",
+    title: "Claude 101",
+    desc: "Fundamentals of working with Claude and generative AI.",
+  },
 ];
 
 export default ResumeApi;
