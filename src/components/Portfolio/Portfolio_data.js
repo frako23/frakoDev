@@ -36,19 +36,6 @@ const Portfolio_data = [
     proyectUrl: "https://atenasconsultores.com/",
   },
   {
-    category: "WEB PAGE",
-    technologies: ["JavaScript", "HTML", "CSS"],
-    title: "Brenda Fitness",
-    image:
-      "https://raw.githubusercontent.com/frako23/frakoDev/refs/heads/main/public/806shots_so.webp",
-    description: [
-      "- Personal trainer website",
-      "- Completly reponsive",
-      "- With form contact section",
-    ],
-    proyectUrl: "https://brenda.fitness/",
-  },
-  {
     category: "WEB APPLICATION",
     title: "LinkedTeam",
     technologies: ["JavaScript", "Python", "React", "Flask", "PostgreSQL"],
@@ -64,98 +51,5 @@ const Portfolio_data = [
     ],
     proyectUrl: "https://linkedteam.frakodev.com/",
   },
-  {
-    category: "WEB PAGE",
-    technologies: ["JavaScript", "HTML", "CSS"],
-    title: "TuPlanificadoraFinanciera",
-    image:
-      "https://raw.githubusercontent.com/frako23/frakoDev/main/src/components/Portfolio/img/planFin.avif",
-    description: [
-      "- Corporate landing page about financial advisor service",
-      "- Completly reponsive",
-      "- With form contact section",
-    ],
-    proyectUrl: "https://tuplanificadorafinanciera.com/",
-  },
-  {
-    category: "Mobile Web Application",
-    technologies: ["React", "Context API", "Bootstrap"],
-    title: "Brakes Store Web App",
-    image:
-      "https://raw.githubusercontent.com/frako23/frakoDev/main/src/components/Portfolio/img/brakes.avif",
-    description: [
-      "- E-commerce for buying car brakes",
-      "- Design for mobile phones",
-      "- with a slider for showing all the products",
-      "- Clients can add, and delete items to them cars",
-      "- The sales process finishes by contacting the seller thru Whatsapp with a pre design message with the items selected in the shopping car",
-    ],
-    proyectUrl: "https://test-catalog-eight.vercel.app/",
-  },
-  {
-    category: "Web Application",
-    technologies: ["Astro", "Tailwind CSS", "React"],
-    title: "Medical Uniforms store web catalog",
-    image:
-      "https://raw.githubusercontent.com/frako23/frakoDev/main/src/components/Portfolio/img/uniforms.avif",
-    description: [
-      "- E-commerce for medical scrubs store",
-      "- Fully responsive design",
-      "- Interactive image views",
-      "- Optimized performance",
-    ],
-    proyectUrl: "https://uniformes-medicos.vercel.app/",
-  },
-  // {
-  //   id: 4,
-  //   category: "WEB PAGE",
-  //   technologies: ["JavaScript", "React", "CSS"],
-  //   title: "Devix",
-  //   image:
-  //     "https://raw.githubusercontent.com/frako23/frakoDev/main/src/components/Portfolio/img/devix.png",
-  //   description: [
-  //     "- App oriented to enhance the performance of the sales force",
-  //     "- Contains a training section with videos and a comments and answers section",
-  //     "- CRM platform with sales funnel (Prospects / Contacted / First Appointment / Negotiation / Closing)",
-  //     "- Section to register activities with clients (Calls, Sending text messages / Emails, Meetings)",
-  //     "- Section to register pending tasks with the Kanban methodology (To Do / In process / Done)",
-  //     "- Manager view to access the CRM and activities with clients of each of the members of your team",
-  //   ],
-  //   proyectUrl: "https://www.linkedteam.app/",
-  // },
-  // {
-  //   id: 5,
-  //   category: "E-COMMERCE",
-  //   technologies: ["JavaScript", "React", "CSS"],
-  //   title: "Droguería Meraki",
-  //   image:
-  //     "https://raw.githubusercontent.com/frako23/frakoDev/main/src/components/Portfolio/img/meraki.png",
-  //   description: [
-  //     "- App oriented to enhance the performance of the sales force",
-  //     "- Contains a training section with videos and a comments and answers section",
-  //     "- CRM platform with sales funnel (Prospects / Contacted / First Appointment / Negotiation / Closing)",
-  //     "- Section to register activities with clients (Calls, Sending text messages / Emails, Meetings)",
-  //     "- Section to register pending tasks with the Kanban methodology (To Do / In process / Done)",
-  //     "- Manager view to access the CRM and activities with clients of each of the members of your team",
-  //   ],
-  //   proyectUrl: "https://www.linkedteam.app/",
-  // },
-  // {
-  //   id: 6,
-  //   category: "API INTEGRATION",
-  //   technologies: ["JavaScript", "React", "CSS"],
-  //   title: "Adventure Travels",
-  //   image:
-  //     "https://raw.githubusercontent.com/frako23/frakoDev/main/src/components/Portfolio/img/adventure-travels.png",
-  //   description: [
-  //     "- App oriented to enhance the performance of the sales force",
-  //     "- Contains a training section with videos and a comments and answers section",
-  //     "- CRM platform with sales funnel (Prospects / Contacted / First Appointment / Negotiation / Closing)",
-  //     "- Section to register activities with clients (Calls, Sending text messages / Emails, Meetings)",
-  //     "- Section to register pending tasks with the Kanban methodology (To Do / In process / Done)",
-  //     "- Manager view to access the CRM and activities with clients of each of the members of your team",
-  //   ],
-  //   proyectUrl: "https://www.linkedteam.app/",
-  // },
 ];
 export default Portfolio_data;
