@@ -11,8 +11,8 @@
 
 .resume-wrapper {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 1.25rem;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 4rem;
 }
 
 .resume-section {
@@ -33,9 +33,96 @@
   gap: 1rem;
 }
 
+.resume-section .heading p {
+  max-width: 46rem;
+  margin-top: 0.6rem;
+  color: var(--muted);
+}
+
+/* Developer experience: a real timeline, newest first */
+.resume-section.dev .content {
+  position: relative;
+  gap: 1.25rem;
+  padding-left: 2rem;
+}
+
+.resume-section.dev .content::before {
+  content: "";
+  position: absolute;
+  left: 0.3rem;
+  top: 0.6rem;
+  bottom: 0.6rem;
+  width: 2px;
+  background: linear-gradient(var(--accent), var(--border));
+}
+
+.resume-section.dev .box {
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(0, 17rem) minmax(0, 1fr);
+  gap: 0.5rem 2rem;
+  align-items: start;
+}
+
+.resume-section.dev .box::before {
+  content: "";
+  position: absolute;
+  left: -2rem;
+  top: 1.75rem;
+  width: 0.75rem;
+  height: 0.75rem;
+  border-radius: 50%;
+  background: var(--bg);
+  border: 2px solid var(--accent);
+}
+
+.resume-section.dev .box:first-child::before {
+  background: var(--accent);
+}
+
+.resume-section.dev .box hr {
+  display: none;
+}
+
+.resume-section.dev .box span {
+  display: block;
+  margin-top: 0.3rem;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.78rem;
+  color: var(--accent);
+}
+
+/* Earlier career: quieter, denser, two columns */
+.resume-section.previous .content,
+.resume-section.education .content {
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 22rem), 1fr));
+}
+
+.resume-section.previous .box {
+  padding: 1.1rem 1.25rem;
+  box-shadow: none;
+  background: transparent;
+}
+
+.resume-section.previous .box h2 {
+  font-size: 1rem;
+}
+
+.resume-section.previous .box span {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.74rem;
+}
+
+.resume-section.previous .box hr {
+  margin: 0.6rem 0;
+}
+
+.resume-section.previous .box p {
+  font-size: 0.92rem;
+}
+
 .resume-section.certifications {
   grid-column: 1 / -1;
-  margin-top: 1.25rem;
 }
 
 .resume-section.certifications .content {
@@ -65,6 +152,20 @@
 
 @media (max-width: 900px) {
   .resume-wrapper {
+    gap: 3rem;
+  }
+
+  .resume-section.dev .box {
     grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .resume-section.dev .content {
+    padding-left: 1.5rem;
+  }
+
+  .resume-section.dev .box::before {
+    left: -1.5rem;
   }
 }

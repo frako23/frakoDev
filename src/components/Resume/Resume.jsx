@@ -18,7 +18,7 @@ const Resume = () => {
           {/* Contenedor principal con clase para controlar el ancho */}
           <div className="resume-wrapper mtop">
             {/* SECCIÓN DE EXPERIENCIA COMO DEVELOPER */}
-            <div className="resume-section">
+            <div className="resume-section dev">
               <div className="heading">
                 <h4>2022 - Present</h4>
                 <h1>Developer Experience</h1>
@@ -42,7 +42,7 @@ const Resume = () => {
             </div>
 
             {/* SECCIÓN DE CARRERA PREVIA (marketing y ventas) */}
-            <div className="resume-section">
+            <div className="resume-section previous">
               <div className="heading">
                 <h4>2009 - 2022</h4>
                 <h1>Before Code: Marketing &amp; Sales</h1>
@@ -72,7 +72,7 @@ const Resume = () => {
             </div>
 
             {/* SECCIÓN DE EDUCACIÓN */}
-            <div className="resume-section">
+            <div className="resume-section education">
               <div className="heading">
                 <h4>2003 - Present</h4>
                 <h1>Education</h1>
